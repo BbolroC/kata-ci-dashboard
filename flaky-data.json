@@ -1,9 +1,9 @@
 {
-  "lastRefresh": "2026-05-03T09:21:22.254Z",
+  "lastRefresh": "2026-05-03T12:52:22.489Z",
   "periodDays": 14,
-  "totalFailures": 212,
-  "totalPRs": 14,
-  "confirmedFlakyCount": 16,
+  "totalFailures": 216,
+  "totalPRs": 15,
+  "confirmedFlakyCount": 18,
   "mergedDespiteFailureCount": 14,
   "failedTests": [
     {
@@ -3245,11 +3245,107 @@
           "prMerged": false
         }
       ]
+    },
+    {
+      "name": "setup_file failed",
+      "file": "k8s-nvidia-nim.bats",
+      "totalFailures": 2,
+      "flakyCount": 2,
+      "mergedCount": 0,
+      "isConfirmedFlaky": true,
+      "mergedDespiteFailure": false,
+      "uniquePRs": 1,
+      "uniqueDates": [
+        "2026-04-29"
+      ],
+      "affectedJobs": [
+        {
+          "name": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-snp-tests-on-amd64",
+          "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-snp-tests-on-amd64",
+          "count": 2,
+          "flakyCount": 2,
+          "mergedCount": 0
+        }
+      ],
+      "recentOccurrences": [
+        {
+          "date": "2026-04-29",
+          "prNumber": "12948",
+          "prTitle": "runtime (go): agent: Add NUMA support for QEMU",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-snp-tests-on-amd64",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-snp-tests-on-amd64",
+          "jobId": "73733781789",
+          "runId": "25131162418",
+          "runAttempt": 3,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-04-29",
+          "prNumber": "12948",
+          "prTitle": "runtime (go): agent: Add NUMA support for QEMU",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-snp-tests-on-amd64",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-snp-tests-on-amd64",
+          "jobId": "73733781789",
+          "runId": "25131162418",
+          "runAttempt": 3,
+          "isFlaky": true,
+          "prMerged": false
+        }
+      ]
+    },
+    {
+      "name": "NIMService llama-3.2-1b-instruct serves /v1/models",
+      "file": "k8s-nvidia-nim-service.bats",
+      "totalFailures": 2,
+      "flakyCount": 2,
+      "mergedCount": 0,
+      "isConfirmedFlaky": true,
+      "mergedDespiteFailure": false,
+      "uniquePRs": 1,
+      "uniqueDates": [
+        "2026-04-29"
+      ],
+      "affectedJobs": [
+        {
+          "name": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-snp-tests-on-amd64",
+          "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-snp-tests-on-amd64",
+          "count": 2,
+          "flakyCount": 2,
+          "mergedCount": 0
+        }
+      ],
+      "recentOccurrences": [
+        {
+          "date": "2026-04-29",
+          "prNumber": "12948",
+          "prTitle": "runtime (go): agent: Add NUMA support for QEMU",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-snp-tests-on-amd64",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-snp-tests-on-amd64",
+          "jobId": "73733781789",
+          "runId": "25131162418",
+          "runAttempt": 3,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-04-29",
+          "prNumber": "12948",
+          "prTitle": "runtime (go): agent: Add NUMA support for QEMU",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-snp-tests-on-amd64",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-snp-tests-on-amd64",
+          "jobId": "73733781789",
+          "runId": "25131162418",
+          "runAttempt": 3,
+          "isFlaky": true,
+          "prMerged": false
+        }
+      ]
     }
   ],
   "summary": {
-    "totalFailedTests": 26,
-    "confirmedFlaky": 16,
+    "totalFailedTests": 28,
+    "confirmedFlaky": 18,
     "mergedDespiteFailure": 14,
     "mostAffectedJob": {
       "name": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
@@ -3297,7 +3393,7 @@
       },
       {
         "date": "2026-04-29",
-        "failures": 16
+        "failures": 20
       },
       {
         "date": "2026-04-30",
@@ -3353,18 +3449,18 @@
         "mergedCount": 0
       },
       {
+        "name": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-snp-tests-on-amd64",
+        "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-snp-tests-on-amd64",
+        "count": 6,
+        "flakyCount": 6,
+        "mergedCount": 2
+      },
+      {
         "name": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (dragonball, lts)",
         "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (dragonball, lts)",
         "count": 2,
         "flakyCount": 2,
         "mergedCount": 0
-      },
-      {
-        "name": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-snp-tests-on-amd64",
-        "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-snp-tests-on-amd64",
-        "count": 2,
-        "flakyCount": 2,
-        "mergedCount": 2
       },
       {
         "name": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu-runtime-rs, active)",
