@@ -1,5 +1,5 @@
 {
-  "lastRefresh": "2026-05-23T20:50:05.032Z",
+  "lastRefresh": "2026-05-24T02:20:19.430Z",
   "periodDays": 14,
   "totalFailures": 996,
   "totalPRs": 8,
@@ -14,7 +14,7 @@
       "mergedCount": 0,
       "isConfirmedFlaky": true,
       "mergedDespiteFailure": false,
-      "uniquePRs": 6,
+      "uniquePRs": 5,
       "uniqueDates": [
         "2026-05-23",
         "2026-05-22"
@@ -117,6 +117,30 @@
         },
         {
           "date": "2026-05-23",
+          "prNumber": "13103",
+          "prTitle": "runtime / agent / kernel: fix cold-plug VFIO guest-kernel mode for SR-IOV RoCE/InfiniBand",
+          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobId": "77554259823",
+          "runId": "26344500907",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-05-23",
+          "prNumber": "13103",
+          "prTitle": "runtime / agent / kernel: fix cold-plug VFIO guest-kernel mode for SR-IOV RoCE/InfiniBand",
+          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobId": "77554259823",
+          "runId": "26344500907",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-05-23",
           "prNumber": "13097",
           "prTitle": "kata-deploy: Add TEE guest detection and conditional artifact extraction",
           "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
@@ -281,30 +305,6 @@
           "runId": "26288096595",
           "runAttempt": 1,
           "isFlaky": true,
-          "prMerged": false
-        },
-        {
-          "date": "2026-05-22",
-          "prNumber": "13093",
-          "prTitle": "dragonball: Add steps to boot TDX VM",
-          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobId": "77355027350",
-          "runId": "26279792725",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-05-22",
-          "prNumber": "13093",
-          "prTitle": "dragonball: Add steps to boot TDX VM",
-          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobId": "77355027350",
-          "runId": "26279792725",
-          "runAttempt": 1,
-          "isFlaky": false,
           "prMerged": false
         },
         {
@@ -365,7 +365,7 @@
       "mergedCount": 0,
       "isConfirmedFlaky": true,
       "mergedDespiteFailure": false,
-      "uniquePRs": 6,
+      "uniquePRs": 5,
       "uniqueDates": [
         "2026-05-23",
         "2026-05-22"
@@ -468,6 +468,30 @@
         },
         {
           "date": "2026-05-23",
+          "prNumber": "13103",
+          "prTitle": "runtime / agent / kernel: fix cold-plug VFIO guest-kernel mode for SR-IOV RoCE/InfiniBand",
+          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobId": "77554259823",
+          "runId": "26344500907",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-05-23",
+          "prNumber": "13103",
+          "prTitle": "runtime / agent / kernel: fix cold-plug VFIO guest-kernel mode for SR-IOV RoCE/InfiniBand",
+          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobId": "77554259823",
+          "runId": "26344500907",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-05-23",
           "prNumber": "13097",
           "prTitle": "kata-deploy: Add TEE guest detection and conditional artifact extraction",
           "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
@@ -632,30 +656,6 @@
           "runId": "26288096595",
           "runAttempt": 1,
           "isFlaky": true,
-          "prMerged": false
-        },
-        {
-          "date": "2026-05-22",
-          "prNumber": "13093",
-          "prTitle": "dragonball: Add steps to boot TDX VM",
-          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobId": "77355027350",
-          "runId": "26279792725",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-05-22",
-          "prNumber": "13093",
-          "prTitle": "dragonball: Add steps to boot TDX VM",
-          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobId": "77355027350",
-          "runId": "26279792725",
-          "runAttempt": 1,
-          "isFlaky": false,
           "prMerged": false
         },
         {
@@ -716,7 +716,7 @@
       "mergedCount": 0,
       "isConfirmedFlaky": false,
       "mergedDespiteFailure": false,
-      "uniquePRs": 6,
+      "uniquePRs": 5,
       "uniqueDates": [
         "2026-05-23",
         "2026-05-22"
@@ -874,6 +874,30 @@
         },
         {
           "date": "2026-05-23",
+          "prNumber": "13103",
+          "prTitle": "runtime / agent / kernel: fix cold-plug VFIO guest-kernel mode for SR-IOV RoCE/InfiniBand",
+          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobId": "77554259823",
+          "runId": "26344500907",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-05-23",
+          "prNumber": "13103",
+          "prTitle": "runtime / agent / kernel: fix cold-plug VFIO guest-kernel mode for SR-IOV RoCE/InfiniBand",
+          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobId": "77554259823",
+          "runId": "26344500907",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-05-23",
           "prNumber": "13097",
           "prTitle": "kata-deploy: Add TEE guest detection and conditional artifact extraction",
           "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
@@ -964,30 +988,6 @@
           "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
           "jobId": "77383906898",
           "runId": "26288096595",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-05-22",
-          "prNumber": "13093",
-          "prTitle": "dragonball: Add steps to boot TDX VM",
-          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobId": "77355027350",
-          "runId": "26279792725",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-05-22",
-          "prNumber": "13093",
-          "prTitle": "dragonball: Add steps to boot TDX VM",
-          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobId": "77355027350",
-          "runId": "26279792725",
           "runAttempt": 1,
           "isFlaky": false,
           "prMerged": false
@@ -3482,7 +3482,7 @@
       "mergedCount": 0,
       "isConfirmedFlaky": false,
       "mergedDespiteFailure": false,
-      "uniquePRs": 6,
+      "uniquePRs": 5,
       "uniqueDates": [
         "2026-05-23",
         "2026-05-22"
@@ -3578,6 +3578,30 @@
         },
         {
           "date": "2026-05-23",
+          "prNumber": "13103",
+          "prTitle": "runtime / agent / kernel: fix cold-plug VFIO guest-kernel mode for SR-IOV RoCE/InfiniBand",
+          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobId": "77554259823",
+          "runId": "26344500907",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-05-23",
+          "prNumber": "13103",
+          "prTitle": "runtime / agent / kernel: fix cold-plug VFIO guest-kernel mode for SR-IOV RoCE/InfiniBand",
+          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobId": "77554259823",
+          "runId": "26344500907",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-05-23",
           "prNumber": "13097",
           "prTitle": "kata-deploy: Add TEE guest detection and conditional artifact extraction",
           "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
@@ -3668,30 +3692,6 @@
           "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
           "jobId": "77383906898",
           "runId": "26288096595",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-05-22",
-          "prNumber": "13093",
-          "prTitle": "dragonball: Add steps to boot TDX VM",
-          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobId": "77355027350",
-          "runId": "26279792725",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-05-22",
-          "prNumber": "13093",
-          "prTitle": "dragonball: Add steps to boot TDX VM",
-          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobId": "77355027350",
-          "runId": "26279792725",
           "runAttempt": 1,
           "isFlaky": false,
           "prMerged": false
@@ -3730,7 +3730,7 @@
       "mergedCount": 0,
       "isConfirmedFlaky": false,
       "mergedDespiteFailure": false,
-      "uniquePRs": 6,
+      "uniquePRs": 5,
       "uniqueDates": [
         "2026-05-23",
         "2026-05-22"
@@ -3826,6 +3826,30 @@
         },
         {
           "date": "2026-05-23",
+          "prNumber": "13103",
+          "prTitle": "runtime / agent / kernel: fix cold-plug VFIO guest-kernel mode for SR-IOV RoCE/InfiniBand",
+          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobId": "77554259823",
+          "runId": "26344500907",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-05-23",
+          "prNumber": "13103",
+          "prTitle": "runtime / agent / kernel: fix cold-plug VFIO guest-kernel mode for SR-IOV RoCE/InfiniBand",
+          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobId": "77554259823",
+          "runId": "26344500907",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-05-23",
           "prNumber": "13097",
           "prTitle": "kata-deploy: Add TEE guest detection and conditional artifact extraction",
           "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
@@ -3916,30 +3940,6 @@
           "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
           "jobId": "77383906898",
           "runId": "26288096595",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-05-22",
-          "prNumber": "13093",
-          "prTitle": "dragonball: Add steps to boot TDX VM",
-          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobId": "77355027350",
-          "runId": "26279792725",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-05-22",
-          "prNumber": "13093",
-          "prTitle": "dragonball: Add steps to boot TDX VM",
-          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobId": "77355027350",
-          "runId": "26279792725",
           "runAttempt": 1,
           "isFlaky": false,
           "prMerged": false
@@ -5046,7 +5046,7 @@
       "mergedCount": 0,
       "isConfirmedFlaky": false,
       "mergedDespiteFailure": false,
-      "uniquePRs": 6,
+      "uniquePRs": 5,
       "uniqueDates": [
         "2026-05-23",
         "2026-05-22"
@@ -5111,6 +5111,30 @@
         },
         {
           "date": "2026-05-23",
+          "prNumber": "13103",
+          "prTitle": "runtime / agent / kernel: fix cold-plug VFIO guest-kernel mode for SR-IOV RoCE/InfiniBand",
+          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobId": "77554259823",
+          "runId": "26344500907",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-05-23",
+          "prNumber": "13103",
+          "prTitle": "runtime / agent / kernel: fix cold-plug VFIO guest-kernel mode for SR-IOV RoCE/InfiniBand",
+          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobId": "77554259823",
+          "runId": "26344500907",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-05-23",
           "prNumber": "13097",
           "prTitle": "kata-deploy: Add TEE guest detection and conditional artifact extraction",
           "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
@@ -5201,30 +5225,6 @@
           "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
           "jobId": "77383906898",
           "runId": "26288096595",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-05-22",
-          "prNumber": "13093",
-          "prTitle": "dragonball: Add steps to boot TDX VM",
-          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobId": "77355027350",
-          "runId": "26279792725",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-05-22",
-          "prNumber": "13093",
-          "prTitle": "dragonball: Add steps to boot TDX VM",
-          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobId": "77355027350",
-          "runId": "26279792725",
           "runAttempt": 1,
           "isFlaky": false,
           "prMerged": false
@@ -5263,7 +5263,7 @@
       "mergedCount": 0,
       "isConfirmedFlaky": false,
       "mergedDespiteFailure": false,
-      "uniquePRs": 6,
+      "uniquePRs": 5,
       "uniqueDates": [
         "2026-05-23",
         "2026-05-22"
@@ -5328,6 +5328,30 @@
         },
         {
           "date": "2026-05-23",
+          "prNumber": "13103",
+          "prTitle": "runtime / agent / kernel: fix cold-plug VFIO guest-kernel mode for SR-IOV RoCE/InfiniBand",
+          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobId": "77554259823",
+          "runId": "26344500907",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-05-23",
+          "prNumber": "13103",
+          "prTitle": "runtime / agent / kernel: fix cold-plug VFIO guest-kernel mode for SR-IOV RoCE/InfiniBand",
+          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobId": "77554259823",
+          "runId": "26344500907",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-05-23",
           "prNumber": "13097",
           "prTitle": "kata-deploy: Add TEE guest detection and conditional artifact extraction",
           "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
@@ -5418,30 +5442,6 @@
           "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
           "jobId": "77383906898",
           "runId": "26288096595",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-05-22",
-          "prNumber": "13093",
-          "prTitle": "dragonball: Add steps to boot TDX VM",
-          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobId": "77355027350",
-          "runId": "26279792725",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-05-22",
-          "prNumber": "13093",
-          "prTitle": "dragonball: Add steps to boot TDX VM",
-          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobId": "77355027350",
-          "runId": "26279792725",
           "runAttempt": 1,
           "isFlaky": false,
           "prMerged": false
@@ -5480,7 +5480,7 @@
       "mergedCount": 0,
       "isConfirmedFlaky": false,
       "mergedDespiteFailure": false,
-      "uniquePRs": 6,
+      "uniquePRs": 5,
       "uniqueDates": [
         "2026-05-23",
         "2026-05-22"
@@ -5545,6 +5545,30 @@
         },
         {
           "date": "2026-05-23",
+          "prNumber": "13103",
+          "prTitle": "runtime / agent / kernel: fix cold-plug VFIO guest-kernel mode for SR-IOV RoCE/InfiniBand",
+          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobId": "77554259823",
+          "runId": "26344500907",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-05-23",
+          "prNumber": "13103",
+          "prTitle": "runtime / agent / kernel: fix cold-plug VFIO guest-kernel mode for SR-IOV RoCE/InfiniBand",
+          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobId": "77554259823",
+          "runId": "26344500907",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-05-23",
           "prNumber": "13097",
           "prTitle": "kata-deploy: Add TEE guest detection and conditional artifact extraction",
           "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
@@ -5635,30 +5659,6 @@
           "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
           "jobId": "77383906898",
           "runId": "26288096595",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-05-22",
-          "prNumber": "13093",
-          "prTitle": "dragonball: Add steps to boot TDX VM",
-          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobId": "77355027350",
-          "runId": "26279792725",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-05-22",
-          "prNumber": "13093",
-          "prTitle": "dragonball: Add steps to boot TDX VM",
-          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobId": "77355027350",
-          "runId": "26279792725",
           "runAttempt": 1,
           "isFlaky": false,
           "prMerged": false
@@ -5697,7 +5697,7 @@
       "mergedCount": 0,
       "isConfirmedFlaky": false,
       "mergedDespiteFailure": false,
-      "uniquePRs": 6,
+      "uniquePRs": 5,
       "uniqueDates": [
         "2026-05-23",
         "2026-05-22"
@@ -5762,6 +5762,30 @@
         },
         {
           "date": "2026-05-23",
+          "prNumber": "13103",
+          "prTitle": "runtime / agent / kernel: fix cold-plug VFIO guest-kernel mode for SR-IOV RoCE/InfiniBand",
+          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobId": "77554259823",
+          "runId": "26344500907",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-05-23",
+          "prNumber": "13103",
+          "prTitle": "runtime / agent / kernel: fix cold-plug VFIO guest-kernel mode for SR-IOV RoCE/InfiniBand",
+          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobId": "77554259823",
+          "runId": "26344500907",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-05-23",
           "prNumber": "13097",
           "prTitle": "kata-deploy: Add TEE guest detection and conditional artifact extraction",
           "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
@@ -5852,30 +5876,6 @@
           "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
           "jobId": "77383906898",
           "runId": "26288096595",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-05-22",
-          "prNumber": "13093",
-          "prTitle": "dragonball: Add steps to boot TDX VM",
-          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobId": "77355027350",
-          "runId": "26279792725",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-05-22",
-          "prNumber": "13093",
-          "prTitle": "dragonball: Add steps to boot TDX VM",
-          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobId": "77355027350",
-          "runId": "26279792725",
           "runAttempt": 1,
           "isFlaky": false,
           "prMerged": false
@@ -5914,7 +5914,7 @@
       "mergedCount": 0,
       "isConfirmedFlaky": false,
       "mergedDespiteFailure": false,
-      "uniquePRs": 6,
+      "uniquePRs": 5,
       "uniqueDates": [
         "2026-05-23",
         "2026-05-22"
@@ -5979,6 +5979,30 @@
         },
         {
           "date": "2026-05-23",
+          "prNumber": "13103",
+          "prTitle": "runtime / agent / kernel: fix cold-plug VFIO guest-kernel mode for SR-IOV RoCE/InfiniBand",
+          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobId": "77554259823",
+          "runId": "26344500907",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-05-23",
+          "prNumber": "13103",
+          "prTitle": "runtime / agent / kernel: fix cold-plug VFIO guest-kernel mode for SR-IOV RoCE/InfiniBand",
+          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobId": "77554259823",
+          "runId": "26344500907",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-05-23",
           "prNumber": "13097",
           "prTitle": "kata-deploy: Add TEE guest detection and conditional artifact extraction",
           "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
@@ -6069,30 +6093,6 @@
           "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
           "jobId": "77383906898",
           "runId": "26288096595",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-05-22",
-          "prNumber": "13093",
-          "prTitle": "dragonball: Add steps to boot TDX VM",
-          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobId": "77355027350",
-          "runId": "26279792725",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-05-22",
-          "prNumber": "13093",
-          "prTitle": "dragonball: Add steps to boot TDX VM",
-          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobId": "77355027350",
-          "runId": "26279792725",
           "runAttempt": 1,
           "isFlaky": false,
           "prMerged": false
@@ -6131,7 +6131,7 @@
       "mergedCount": 0,
       "isConfirmedFlaky": false,
       "mergedDespiteFailure": false,
-      "uniquePRs": 6,
+      "uniquePRs": 5,
       "uniqueDates": [
         "2026-05-23",
         "2026-05-22"
@@ -6196,6 +6196,30 @@
         },
         {
           "date": "2026-05-23",
+          "prNumber": "13103",
+          "prTitle": "runtime / agent / kernel: fix cold-plug VFIO guest-kernel mode for SR-IOV RoCE/InfiniBand",
+          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobId": "77554259823",
+          "runId": "26344500907",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-05-23",
+          "prNumber": "13103",
+          "prTitle": "runtime / agent / kernel: fix cold-plug VFIO guest-kernel mode for SR-IOV RoCE/InfiniBand",
+          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobId": "77554259823",
+          "runId": "26344500907",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-05-23",
           "prNumber": "13097",
           "prTitle": "kata-deploy: Add TEE guest detection and conditional artifact extraction",
           "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
@@ -6286,30 +6310,6 @@
           "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
           "jobId": "77383906898",
           "runId": "26288096595",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-05-22",
-          "prNumber": "13093",
-          "prTitle": "dragonball: Add steps to boot TDX VM",
-          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobId": "77355027350",
-          "runId": "26279792725",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-05-22",
-          "prNumber": "13093",
-          "prTitle": "dragonball: Add steps to boot TDX VM",
-          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobId": "77355027350",
-          "runId": "26279792725",
           "runAttempt": 1,
           "isFlaky": false,
           "prMerged": false
@@ -6348,7 +6348,7 @@
       "mergedCount": 0,
       "isConfirmedFlaky": false,
       "mergedDespiteFailure": false,
-      "uniquePRs": 6,
+      "uniquePRs": 5,
       "uniqueDates": [
         "2026-05-23",
         "2026-05-22"
@@ -6413,6 +6413,30 @@
         },
         {
           "date": "2026-05-23",
+          "prNumber": "13103",
+          "prTitle": "runtime / agent / kernel: fix cold-plug VFIO guest-kernel mode for SR-IOV RoCE/InfiniBand",
+          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobId": "77554259823",
+          "runId": "26344500907",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-05-23",
+          "prNumber": "13103",
+          "prTitle": "runtime / agent / kernel: fix cold-plug VFIO guest-kernel mode for SR-IOV RoCE/InfiniBand",
+          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobId": "77554259823",
+          "runId": "26344500907",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-05-23",
           "prNumber": "13097",
           "prTitle": "kata-deploy: Add TEE guest detection and conditional artifact extraction",
           "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
@@ -6503,30 +6527,6 @@
           "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
           "jobId": "77383906898",
           "runId": "26288096595",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-05-22",
-          "prNumber": "13093",
-          "prTitle": "dragonball: Add steps to boot TDX VM",
-          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobId": "77355027350",
-          "runId": "26279792725",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-05-22",
-          "prNumber": "13093",
-          "prTitle": "dragonball: Add steps to boot TDX VM",
-          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobId": "77355027350",
-          "runId": "26279792725",
           "runAttempt": 1,
           "isFlaky": false,
           "prMerged": false
@@ -6565,7 +6565,7 @@
       "mergedCount": 0,
       "isConfirmedFlaky": false,
       "mergedDespiteFailure": false,
-      "uniquePRs": 6,
+      "uniquePRs": 5,
       "uniqueDates": [
         "2026-05-23",
         "2026-05-22"
@@ -6630,6 +6630,30 @@
         },
         {
           "date": "2026-05-23",
+          "prNumber": "13103",
+          "prTitle": "runtime / agent / kernel: fix cold-plug VFIO guest-kernel mode for SR-IOV RoCE/InfiniBand",
+          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobId": "77554259823",
+          "runId": "26344500907",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-05-23",
+          "prNumber": "13103",
+          "prTitle": "runtime / agent / kernel: fix cold-plug VFIO guest-kernel mode for SR-IOV RoCE/InfiniBand",
+          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
+          "jobId": "77554259823",
+          "runId": "26344500907",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-05-23",
           "prNumber": "13097",
           "prTitle": "kata-deploy: Add TEE guest detection and conditional artifact extraction",
           "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
@@ -6720,30 +6744,6 @@
           "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
           "jobId": "77383906898",
           "runId": "26288096595",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-05-22",
-          "prNumber": "13093",
-          "prTitle": "dragonball: Add steps to boot TDX VM",
-          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobId": "77355027350",
-          "runId": "26279792725",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-05-22",
-          "prNumber": "13093",
-          "prTitle": "dragonball: Add steps to boot TDX VM",
-          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter (qemu-coco-dev-runtime-rs, erofs, default)",
-          "jobId": "77355027350",
-          "runId": "26279792725",
           "runAttempt": 1,
           "isFlaky": false,
           "prMerged": false
@@ -16121,10 +16121,6 @@
     },
     "trend": [
       {
-        "date": "2026-05-10",
-        "failures": 0
-      },
-      {
         "date": "2026-05-11",
         "failures": 0
       },
@@ -16170,11 +16166,15 @@
       },
       {
         "date": "2026-05-22",
-        "failures": 382
+        "failures": 356
       },
       {
         "date": "2026-05-23",
-        "failures": 614
+        "failures": 640
+      },
+      {
+        "date": "2026-05-24",
+        "failures": 0
       }
     ],
     "jobBreakdown": [
