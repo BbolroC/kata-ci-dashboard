@@ -1,8 +1,8 @@
 {
-  "lastRefresh": "2026-06-05T08:07:24.052Z",
+  "lastRefresh": "2026-06-05T11:34:42.083Z",
   "periodDays": 14,
-  "totalFailures": 84,
-  "totalPRs": 11,
+  "totalFailures": 86,
+  "totalPRs": 10,
   "confirmedFlakyCount": 4,
   "mergedDespiteFailureCount": 0,
   "failedTests": [
@@ -1148,6 +1148,102 @@
       ]
     },
     {
+      "name": "Pod that performs ip6tables setup",
+      "file": "k8s-ip6tables.bats",
+      "totalFailures": 2,
+      "flakyCount": 0,
+      "mergedCount": 0,
+      "isConfirmedFlaky": false,
+      "mergedDespiteFailure": false,
+      "uniquePRs": 1,
+      "uniqueDates": [
+        "2026-06-05"
+      ],
+      "affectedJobs": [
+        {
+          "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "count": 2,
+          "flakyCount": 0,
+          "mergedCount": 0
+        }
+      ],
+      "recentOccurrences": [
+        {
+          "date": "2026-06-05",
+          "prNumber": "13173",
+          "prTitle": "runtime-rs: size static sandboxes with fixed overheads",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobId": "79686492095",
+          "runId": "27001308815",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-05",
+          "prNumber": "13173",
+          "prTitle": "runtime-rs: size static sandboxes with fixed overheads",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobId": "79686492095",
+          "runId": "27001308815",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        }
+      ]
+    },
+    {
+      "name": "Pods establishing a VPN connection using openvpn",
+      "file": "k8s-openvpn.bats",
+      "totalFailures": 2,
+      "flakyCount": 0,
+      "mergedCount": 0,
+      "isConfirmedFlaky": false,
+      "mergedDespiteFailure": false,
+      "uniquePRs": 1,
+      "uniqueDates": [
+        "2026-06-05"
+      ],
+      "affectedJobs": [
+        {
+          "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "count": 2,
+          "flakyCount": 0,
+          "mergedCount": 0
+        }
+      ],
+      "recentOccurrences": [
+        {
+          "date": "2026-06-05",
+          "prNumber": "13173",
+          "prTitle": "runtime-rs: size static sandboxes with fixed overheads",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobId": "79686492095",
+          "runId": "27001308815",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-05",
+          "prNumber": "13173",
+          "prTitle": "runtime-rs: size static sandboxes with fixed overheads",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobId": "79686492095",
+          "runId": "27001308815",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        }
+      ]
+    },
+    {
       "name": "Pod with sandbox_cgroup_only=false starts successfully",
       "file": "k8s-sandbox-cgroup.bats",
       "totalFailures": 2,
@@ -1436,54 +1532,6 @@
       ]
     },
     {
-      "name": "Test cannot launch pod with measured boot enabled and incorrect hash",
-      "file": "k8s-measured-rootfs.bats",
-      "totalFailures": 2,
-      "flakyCount": 0,
-      "mergedCount": 0,
-      "isConfirmedFlaky": false,
-      "mergedDespiteFailure": false,
-      "uniquePRs": 1,
-      "uniqueDates": [
-        "2026-06-04"
-      ],
-      "affectedJobs": [
-        {
-          "name": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-on-tee (sev-snp, qemu-snp)",
-          "displayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-on-tee (sev-snp, qemu-snp)",
-          "count": 2,
-          "flakyCount": 0,
-          "mergedCount": 0
-        }
-      ],
-      "recentOccurrences": [
-        {
-          "date": "2026-06-04",
-          "prNumber": "13129",
-          "prTitle": "runtime-rs: fix default_memory annonation processing",
-          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-on-tee (sev-snp, qemu-snp)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-on-tee (sev-snp, qemu-snp)",
-          "jobId": "79469798484",
-          "runId": "26936191562",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-04",
-          "prNumber": "13129",
-          "prTitle": "runtime-rs: fix default_memory annonation processing",
-          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-on-tee (sev-snp, qemu-snp)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-on-tee (sev-snp, qemu-snp)",
-          "jobId": "79469798484",
-          "runId": "26936191562",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        }
-      ]
-    },
-    {
       "name": "Cannot get CDH resource when deny-all policy is set",
       "file": "k8s-confidential-attestation.bats",
       "totalFailures": 1,
@@ -1521,7 +1569,7 @@
     }
   ],
   "summary": {
-    "totalFailedTests": 12,
+    "totalFailedTests": 13,
     "confirmedFlaky": 4,
     "mergedDespiteFailure": 0,
     "mostAffectedJob": {
@@ -1582,11 +1630,11 @@
       },
       {
         "date": "2026-06-04",
-        "failures": 84
+        "failures": 82
       },
       {
         "date": "2026-06-05",
-        "failures": 0
+        "failures": 4
       }
     ],
     "jobBreakdown": [
@@ -1600,6 +1648,13 @@
       {
         "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
         "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+        "count": 6,
+        "flakyCount": 0,
+        "mergedCount": 0
+      },
+      {
+        "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+        "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
         "count": 6,
         "flakyCount": 0,
         "mergedCount": 0
@@ -1649,13 +1704,6 @@
       {
         "name": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee (qemu-coco-dev-runtime-rs, nydus, guest-pull)",
         "displayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee (qemu-coco-dev-runtime-rs, nydus, guest-pull)",
-        "count": 4,
-        "flakyCount": 0,
-        "mergedCount": 0
-      },
-      {
-        "name": "kata-containers-ci-on-push / run-k8s-tests-on-aks / run-k8s-tests (cbl-mariner, clh-azure-runtime-rs, small)",
-        "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-aks / run-k8s-tests (cbl-mariner, clh-azure-runtime-rs, small)",
         "count": 4,
         "flakyCount": 0,
         "mergedCount": 0
