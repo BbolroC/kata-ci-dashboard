@@ -1,7 +1,7 @@
 {
-  "lastRefresh": "2026-06-08T02:45:58.958Z",
+  "lastRefresh": "2026-06-08T08:54:53.573Z",
   "periodDays": 14,
-  "totalFailures": 88,
+  "totalFailures": 90,
   "totalPRs": 10,
   "confirmedFlakyCount": 19,
   "mergedDespiteFailureCount": 0,
@@ -1742,10 +1742,58 @@
           "prMerged": false
         }
       ]
+    },
+    {
+      "name": "Pod quota",
+      "file": "k8s-pod-quota.bats",
+      "totalFailures": 2,
+      "flakyCount": 0,
+      "mergedCount": 0,
+      "isConfirmedFlaky": false,
+      "mergedDespiteFailure": false,
+      "uniquePRs": 1,
+      "uniqueDates": [
+        "2026-06-05"
+      ],
+      "affectedJobs": [
+        {
+          "name": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (clh-runtime-rs, lts)",
+          "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (clh-runtime-rs, lts)",
+          "count": 2,
+          "flakyCount": 0,
+          "mergedCount": 0
+        }
+      ],
+      "recentOccurrences": [
+        {
+          "date": "2026-06-05",
+          "prNumber": "13120",
+          "prTitle": "chore(docs): Clarify dropIn runtime configuration",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (clh-runtime-rs, lts)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (clh-runtime-rs, lts)",
+          "jobId": "79765362770",
+          "runId": "27025312266",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-05",
+          "prNumber": "13120",
+          "prTitle": "chore(docs): Clarify dropIn runtime configuration",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (clh-runtime-rs, lts)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (clh-runtime-rs, lts)",
+          "jobId": "79765362770",
+          "runId": "27025312266",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        }
+      ]
     }
   ],
   "summary": {
-    "totalFailedTests": 24,
+    "totalFailedTests": 25,
     "confirmedFlaky": 19,
     "mergedDespiteFailure": 0,
     "mostAffectedJob": {
@@ -1798,7 +1846,7 @@
       },
       {
         "date": "2026-06-05",
-        "failures": 80
+        "failures": 82
       },
       {
         "date": "2026-06-06",
