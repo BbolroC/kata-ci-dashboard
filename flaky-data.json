@@ -1,8 +1,8 @@
 {
-  "lastRefresh": "2026-06-20T07:56:52.906Z",
+  "lastRefresh": "2026-06-20T10:39:43.046Z",
   "periodDays": 14,
-  "totalFailures": 150,
-  "totalPRs": 12,
+  "totalFailures": 152,
+  "totalPRs": 13,
   "confirmedFlakyCount": 26,
   "mergedDespiteFailureCount": 2,
   "failedTests": [
@@ -2463,6 +2463,54 @@
       ]
     },
     {
+      "name": "Run a cron job to completion",
+      "file": "k8s-cron-job.bats",
+      "totalFailures": 2,
+      "flakyCount": 0,
+      "mergedCount": 0,
+      "isConfirmedFlaky": false,
+      "mergedDespiteFailure": false,
+      "uniquePRs": 1,
+      "uniqueDates": [
+        "2026-06-18"
+      ],
+      "affectedJobs": [
+        {
+          "name": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-memory",
+          "displayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-memory",
+          "count": 2,
+          "flakyCount": 0,
+          "mergedCount": 0
+        }
+      ],
+      "recentOccurrences": [
+        {
+          "date": "2026-06-18",
+          "prNumber": "13241",
+          "prTitle": "agent: report 128+signal as exit code for signal-terminated processes",
+          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-memory",
+          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-memory",
+          "jobId": "82251005235",
+          "runId": "27793189300",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-18",
+          "prNumber": "13241",
+          "prTitle": "agent: report 128+signal as exit code for signal-terminated processes",
+          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-memory",
+          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-memory",
+          "jobId": "82251005235",
+          "runId": "27793189300",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        }
+      ]
+    },
+    {
       "name": "Secret propagation to volume-mounted pod",
       "file": "k8s-credentials-secrets.bats",
       "totalFailures": 2,
@@ -2664,7 +2712,7 @@
     }
   ],
   "summary": {
-    "totalFailedTests": 27,
+    "totalFailedTests": 28,
     "confirmedFlaky": 26,
     "mergedDespiteFailure": 2,
     "mostAffectedJob": {
@@ -2721,7 +2769,7 @@
       },
       {
         "date": "2026-06-18",
-        "failures": 36
+        "failures": 38
       },
       {
         "date": "2026-06-19",
