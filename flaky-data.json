@@ -1,16 +1,16 @@
 {
-  "lastRefresh": "2026-06-20T02:28:55.428Z",
+  "lastRefresh": "2026-06-20T07:56:52.906Z",
   "periodDays": 14,
-  "totalFailures": 132,
-  "totalPRs": 13,
-  "confirmedFlakyCount": 24,
+  "totalFailures": 150,
+  "totalPRs": 12,
+  "confirmedFlakyCount": 26,
   "mergedDespiteFailureCount": 2,
   "failedTests": [
     {
       "name": "Pods establishing a VPN connection using openvpn",
       "file": "k8s-openvpn.bats",
       "totalFailures": 26,
-      "flakyCount": 20,
+      "flakyCount": 22,
       "mergedCount": 4,
       "isConfirmedFlaky": true,
       "mergedDespiteFailure": true,
@@ -24,7 +24,7 @@
           "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "count": 16,
-          "flakyCount": 10,
+          "flakyCount": 12,
           "mergedCount": 4
         },
         {
@@ -86,6 +86,54 @@
         },
         {
           "date": "2026-06-19",
+          "prNumber": "13245",
+          "prTitle": "Unify nix version",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobId": "82316409477",
+          "runId": "27814330011",
+          "runAttempt": 1,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-19",
+          "prNumber": "13245",
+          "prTitle": "Unify nix version",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobId": "82316409477",
+          "runId": "27814330011",
+          "runAttempt": 1,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-19",
+          "prNumber": "13245",
+          "prTitle": "Unify nix version",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "82316409493",
+          "runId": "27814330011",
+          "runAttempt": 1,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-19",
+          "prNumber": "13245",
+          "prTitle": "Unify nix version",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "82316409493",
+          "runId": "27814330011",
+          "runAttempt": 1,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-19",
           "prNumber": "13164",
           "prTitle": "tests: use limits for Kata workload resources",
           "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
@@ -200,54 +248,6 @@
           "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "jobId": "81903093878",
           "runId": "27689074430",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-17",
-          "prNumber": "13240",
-          "prTitle": "Dragonball: Fix warnings in dragonball",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "jobId": "81844488000",
-          "runId": "27672453872",
-          "runAttempt": 1,
-          "isFlaky": true,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-17",
-          "prNumber": "13240",
-          "prTitle": "Dragonball: Fix warnings in dragonball",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "jobId": "81844488000",
-          "runId": "27672453872",
-          "runAttempt": 1,
-          "isFlaky": true,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-17",
-          "prNumber": "13240",
-          "prTitle": "Dragonball: Fix warnings in dragonball",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobId": "81844488030",
-          "runId": "27672453872",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-17",
-          "prNumber": "13240",
-          "prTitle": "Dragonball: Fix warnings in dragonball",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobId": "81844488030",
-          "runId": "27672453872",
           "runAttempt": 1,
           "isFlaky": false,
           "prMerged": false
@@ -353,8 +353,8 @@
     {
       "name": "Liveness http probe",
       "file": "k8s-liveness-probes.bats",
-      "totalFailures": 8,
-      "flakyCount": 6,
+      "totalFailures": 12,
+      "flakyCount": 10,
       "mergedCount": 0,
       "isConfirmedFlaky": true,
       "mergedDespiteFailure": false,
@@ -367,15 +367,15 @@
         {
           "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "count": 4,
-          "flakyCount": 2,
+          "count": 6,
+          "flakyCount": 4,
           "mergedCount": 0
         },
         {
           "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
           "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "count": 2,
-          "flakyCount": 2,
+          "count": 4,
+          "flakyCount": 4,
           "mergedCount": 0
         },
         {
@@ -437,6 +437,54 @@
         },
         {
           "date": "2026-06-19",
+          "prNumber": "13245",
+          "prTitle": "Unify nix version",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobId": "82316409477",
+          "runId": "27814330011",
+          "runAttempt": 1,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-19",
+          "prNumber": "13245",
+          "prTitle": "Unify nix version",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobId": "82316409477",
+          "runId": "27814330011",
+          "runAttempt": 1,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-19",
+          "prNumber": "13245",
+          "prTitle": "Unify nix version",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "82316409493",
+          "runId": "27814330011",
+          "runAttempt": 1,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-19",
+          "prNumber": "13245",
+          "prTitle": "Unify nix version",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "82316409493",
+          "runId": "27814330011",
+          "runAttempt": 1,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-19",
           "prNumber": "13164",
           "prTitle": "tests: use limits for Kata workload resources",
           "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
@@ -480,6 +528,459 @@
           "jobId": "81990515771",
           "runId": "27709572490",
           "runAttempt": 1,
+          "isFlaky": true,
+          "prMerged": false
+        }
+      ]
+    },
+    {
+      "name": "Empty dir volume when FSGroup is specified with non-root container",
+      "file": "k8s-empty-dirs.bats",
+      "totalFailures": 10,
+      "flakyCount": 8,
+      "mergedCount": 0,
+      "isConfirmedFlaky": true,
+      "mergedDespiteFailure": false,
+      "uniquePRs": 3,
+      "uniqueDates": [
+        "2026-06-19"
+      ],
+      "affectedJobs": [
+        {
+          "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "count": 6,
+          "flakyCount": 4,
+          "mergedCount": 0
+        },
+        {
+          "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "count": 4,
+          "flakyCount": 4,
+          "mergedCount": 0
+        }
+      ],
+      "recentOccurrences": [
+        {
+          "date": "2026-06-19",
+          "prNumber": "13249",
+          "prTitle": "Thiserror update",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobId": "82309023281",
+          "runId": "27812143034",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-19",
+          "prNumber": "13249",
+          "prTitle": "Thiserror update",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobId": "82309023281",
+          "runId": "27812143034",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-19",
+          "prNumber": "13245",
+          "prTitle": "Unify nix version",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobId": "82356473156",
+          "runId": "27821268061",
+          "runAttempt": 3,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-19",
+          "prNumber": "13245",
+          "prTitle": "Unify nix version",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobId": "82356473156",
+          "runId": "27821268061",
+          "runAttempt": 3,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-19",
+          "prNumber": "13245",
+          "prTitle": "Unify nix version",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobId": "82316409477",
+          "runId": "27814330011",
+          "runAttempt": 1,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-19",
+          "prNumber": "13245",
+          "prTitle": "Unify nix version",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobId": "82316409477",
+          "runId": "27814330011",
+          "runAttempt": 1,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-19",
+          "prNumber": "13245",
+          "prTitle": "Unify nix version",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "82316409493",
+          "runId": "27814330011",
+          "runAttempt": 1,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-19",
+          "prNumber": "13245",
+          "prTitle": "Unify nix version",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "82316409493",
+          "runId": "27814330011",
+          "runAttempt": 1,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-19",
+          "prNumber": "13164",
+          "prTitle": "tests: use limits for Kata workload resources",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "82408972158",
+          "runId": "27837752282",
+          "runAttempt": 2,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-19",
+          "prNumber": "13164",
+          "prTitle": "tests: use limits for Kata workload resources",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "82408972158",
+          "runId": "27837752282",
+          "runAttempt": 2,
+          "isFlaky": true,
+          "prMerged": false
+        }
+      ]
+    },
+    {
+      "name": "Pod that performs ip6tables setup",
+      "file": "k8s-ip6tables.bats",
+      "totalFailures": 10,
+      "flakyCount": 8,
+      "mergedCount": 0,
+      "isConfirmedFlaky": true,
+      "mergedDespiteFailure": false,
+      "uniquePRs": 3,
+      "uniqueDates": [
+        "2026-06-19"
+      ],
+      "affectedJobs": [
+        {
+          "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "count": 6,
+          "flakyCount": 4,
+          "mergedCount": 0
+        },
+        {
+          "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "count": 4,
+          "flakyCount": 4,
+          "mergedCount": 0
+        }
+      ],
+      "recentOccurrences": [
+        {
+          "date": "2026-06-19",
+          "prNumber": "13249",
+          "prTitle": "Thiserror update",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobId": "82309023281",
+          "runId": "27812143034",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-19",
+          "prNumber": "13249",
+          "prTitle": "Thiserror update",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobId": "82309023281",
+          "runId": "27812143034",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-19",
+          "prNumber": "13245",
+          "prTitle": "Unify nix version",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobId": "82356473156",
+          "runId": "27821268061",
+          "runAttempt": 3,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-19",
+          "prNumber": "13245",
+          "prTitle": "Unify nix version",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobId": "82356473156",
+          "runId": "27821268061",
+          "runAttempt": 3,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-19",
+          "prNumber": "13245",
+          "prTitle": "Unify nix version",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobId": "82316409477",
+          "runId": "27814330011",
+          "runAttempt": 1,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-19",
+          "prNumber": "13245",
+          "prTitle": "Unify nix version",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobId": "82316409477",
+          "runId": "27814330011",
+          "runAttempt": 1,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-19",
+          "prNumber": "13245",
+          "prTitle": "Unify nix version",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "82316409493",
+          "runId": "27814330011",
+          "runAttempt": 1,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-19",
+          "prNumber": "13245",
+          "prTitle": "Unify nix version",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "82316409493",
+          "runId": "27814330011",
+          "runAttempt": 1,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-19",
+          "prNumber": "13164",
+          "prTitle": "tests: use limits for Kata workload resources",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "82408972158",
+          "runId": "27837752282",
+          "runAttempt": 2,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-19",
+          "prNumber": "13164",
+          "prTitle": "tests: use limits for Kata workload resources",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "82408972158",
+          "runId": "27837752282",
+          "runAttempt": 2,
+          "isFlaky": true,
+          "prMerged": false
+        }
+      ]
+    },
+    {
+      "name": "Liveness tcp probe",
+      "file": "k8s-liveness-probes.bats",
+      "totalFailures": 10,
+      "flakyCount": 8,
+      "mergedCount": 0,
+      "isConfirmedFlaky": true,
+      "mergedDespiteFailure": false,
+      "uniquePRs": 3,
+      "uniqueDates": [
+        "2026-06-19"
+      ],
+      "affectedJobs": [
+        {
+          "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "count": 6,
+          "flakyCount": 4,
+          "mergedCount": 0
+        },
+        {
+          "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "count": 4,
+          "flakyCount": 4,
+          "mergedCount": 0
+        }
+      ],
+      "recentOccurrences": [
+        {
+          "date": "2026-06-19",
+          "prNumber": "13249",
+          "prTitle": "Thiserror update",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobId": "82309023281",
+          "runId": "27812143034",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-19",
+          "prNumber": "13249",
+          "prTitle": "Thiserror update",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobId": "82309023281",
+          "runId": "27812143034",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-19",
+          "prNumber": "13245",
+          "prTitle": "Unify nix version",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobId": "82356473156",
+          "runId": "27821268061",
+          "runAttempt": 3,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-19",
+          "prNumber": "13245",
+          "prTitle": "Unify nix version",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobId": "82356473156",
+          "runId": "27821268061",
+          "runAttempt": 3,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-19",
+          "prNumber": "13245",
+          "prTitle": "Unify nix version",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobId": "82316409477",
+          "runId": "27814330011",
+          "runAttempt": 1,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-19",
+          "prNumber": "13245",
+          "prTitle": "Unify nix version",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobId": "82316409477",
+          "runId": "27814330011",
+          "runAttempt": 1,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-19",
+          "prNumber": "13245",
+          "prTitle": "Unify nix version",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "82316409493",
+          "runId": "27814330011",
+          "runAttempt": 1,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-19",
+          "prNumber": "13245",
+          "prTitle": "Unify nix version",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "82316409493",
+          "runId": "27814330011",
+          "runAttempt": 1,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-19",
+          "prNumber": "13164",
+          "prTitle": "tests: use limits for Kata workload resources",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "82408972158",
+          "runId": "27837752282",
+          "runAttempt": 2,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-19",
+          "prNumber": "13164",
+          "prTitle": "tests: use limits for Kata workload resources",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "82408972158",
+          "runId": "27837752282",
+          "runAttempt": 2,
           "isFlaky": true,
           "prMerged": false
         }
@@ -629,315 +1130,6 @@
           "jobId": "82011330701",
           "runId": "27722066871",
           "runAttempt": 1,
-          "isFlaky": true,
-          "prMerged": false
-        }
-      ]
-    },
-    {
-      "name": "Empty dir volume when FSGroup is specified with non-root container",
-      "file": "k8s-empty-dirs.bats",
-      "totalFailures": 6,
-      "flakyCount": 4,
-      "mergedCount": 0,
-      "isConfirmedFlaky": true,
-      "mergedDespiteFailure": false,
-      "uniquePRs": 3,
-      "uniqueDates": [
-        "2026-06-19"
-      ],
-      "affectedJobs": [
-        {
-          "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "count": 4,
-          "flakyCount": 2,
-          "mergedCount": 0
-        },
-        {
-          "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "count": 2,
-          "flakyCount": 2,
-          "mergedCount": 0
-        }
-      ],
-      "recentOccurrences": [
-        {
-          "date": "2026-06-19",
-          "prNumber": "13249",
-          "prTitle": "Thiserror update",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobId": "82309023281",
-          "runId": "27812143034",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-19",
-          "prNumber": "13249",
-          "prTitle": "Thiserror update",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobId": "82309023281",
-          "runId": "27812143034",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-19",
-          "prNumber": "13245",
-          "prTitle": "Unify nix version",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobId": "82356473156",
-          "runId": "27821268061",
-          "runAttempt": 3,
-          "isFlaky": true,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-19",
-          "prNumber": "13245",
-          "prTitle": "Unify nix version",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobId": "82356473156",
-          "runId": "27821268061",
-          "runAttempt": 3,
-          "isFlaky": true,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-19",
-          "prNumber": "13164",
-          "prTitle": "tests: use limits for Kata workload resources",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "jobId": "82408972158",
-          "runId": "27837752282",
-          "runAttempt": 2,
-          "isFlaky": true,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-19",
-          "prNumber": "13164",
-          "prTitle": "tests: use limits for Kata workload resources",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "jobId": "82408972158",
-          "runId": "27837752282",
-          "runAttempt": 2,
-          "isFlaky": true,
-          "prMerged": false
-        }
-      ]
-    },
-    {
-      "name": "Pod that performs ip6tables setup",
-      "file": "k8s-ip6tables.bats",
-      "totalFailures": 6,
-      "flakyCount": 4,
-      "mergedCount": 0,
-      "isConfirmedFlaky": true,
-      "mergedDespiteFailure": false,
-      "uniquePRs": 3,
-      "uniqueDates": [
-        "2026-06-19"
-      ],
-      "affectedJobs": [
-        {
-          "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "count": 4,
-          "flakyCount": 2,
-          "mergedCount": 0
-        },
-        {
-          "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "count": 2,
-          "flakyCount": 2,
-          "mergedCount": 0
-        }
-      ],
-      "recentOccurrences": [
-        {
-          "date": "2026-06-19",
-          "prNumber": "13249",
-          "prTitle": "Thiserror update",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobId": "82309023281",
-          "runId": "27812143034",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-19",
-          "prNumber": "13249",
-          "prTitle": "Thiserror update",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobId": "82309023281",
-          "runId": "27812143034",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-19",
-          "prNumber": "13245",
-          "prTitle": "Unify nix version",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobId": "82356473156",
-          "runId": "27821268061",
-          "runAttempt": 3,
-          "isFlaky": true,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-19",
-          "prNumber": "13245",
-          "prTitle": "Unify nix version",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobId": "82356473156",
-          "runId": "27821268061",
-          "runAttempt": 3,
-          "isFlaky": true,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-19",
-          "prNumber": "13164",
-          "prTitle": "tests: use limits for Kata workload resources",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "jobId": "82408972158",
-          "runId": "27837752282",
-          "runAttempt": 2,
-          "isFlaky": true,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-19",
-          "prNumber": "13164",
-          "prTitle": "tests: use limits for Kata workload resources",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "jobId": "82408972158",
-          "runId": "27837752282",
-          "runAttempt": 2,
-          "isFlaky": true,
-          "prMerged": false
-        }
-      ]
-    },
-    {
-      "name": "Liveness tcp probe",
-      "file": "k8s-liveness-probes.bats",
-      "totalFailures": 6,
-      "flakyCount": 4,
-      "mergedCount": 0,
-      "isConfirmedFlaky": true,
-      "mergedDespiteFailure": false,
-      "uniquePRs": 3,
-      "uniqueDates": [
-        "2026-06-19"
-      ],
-      "affectedJobs": [
-        {
-          "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "count": 4,
-          "flakyCount": 2,
-          "mergedCount": 0
-        },
-        {
-          "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "count": 2,
-          "flakyCount": 2,
-          "mergedCount": 0
-        }
-      ],
-      "recentOccurrences": [
-        {
-          "date": "2026-06-19",
-          "prNumber": "13249",
-          "prTitle": "Thiserror update",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobId": "82309023281",
-          "runId": "27812143034",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-19",
-          "prNumber": "13249",
-          "prTitle": "Thiserror update",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobId": "82309023281",
-          "runId": "27812143034",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-19",
-          "prNumber": "13245",
-          "prTitle": "Unify nix version",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobId": "82356473156",
-          "runId": "27821268061",
-          "runAttempt": 3,
-          "isFlaky": true,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-19",
-          "prNumber": "13245",
-          "prTitle": "Unify nix version",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobId": "82356473156",
-          "runId": "27821268061",
-          "runAttempt": 3,
-          "isFlaky": true,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-19",
-          "prNumber": "13164",
-          "prTitle": "tests: use limits for Kata workload resources",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "jobId": "82408972158",
-          "runId": "27837752282",
-          "runAttempt": 2,
-          "isFlaky": true,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-19",
-          "prNumber": "13164",
-          "prTitle": "tests: use limits for Kata workload resources",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "jobId": "82408972158",
-          "runId": "27837752282",
-          "runAttempt": 2,
           "isFlaky": true,
           "prMerged": false
         }
@@ -2175,49 +2367,97 @@
       ]
     },
     {
-      "name": "Run a cron job to completion",
-      "file": "k8s-cron-job.bats",
+      "name": "Parallel jobs",
+      "file": "k8s-parallel.bats",
       "totalFailures": 2,
-      "flakyCount": 0,
+      "flakyCount": 2,
       "mergedCount": 0,
-      "isConfirmedFlaky": false,
+      "isConfirmedFlaky": true,
       "mergedDespiteFailure": false,
       "uniquePRs": 1,
       "uniqueDates": [
-        "2026-06-18"
+        "2026-06-19"
       ],
       "affectedJobs": [
         {
-          "name": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-memory",
-          "displayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-memory",
+          "name": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee (qemu-coco-dev-runtime-rs, nydus, guest-pull)",
+          "displayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee (qemu-coco-dev-runtime-rs, nydus, guest-pull)",
           "count": 2,
-          "flakyCount": 0,
+          "flakyCount": 2,
           "mergedCount": 0
         }
       ],
       "recentOccurrences": [
         {
-          "date": "2026-06-18",
-          "prNumber": "13241",
-          "prTitle": "agent: report 128+signal as exit code for signal-terminated processes",
-          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-memory",
-          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-memory",
-          "jobId": "82251005235",
-          "runId": "27793189300",
+          "date": "2026-06-19",
+          "prNumber": "13245",
+          "prTitle": "Unify nix version",
+          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee (qemu-coco-dev-runtime-rs, nydus, guest-pull)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee (qemu-coco-dev-runtime-rs, nydus, guest-pull)",
+          "jobId": "82316419220",
+          "runId": "27814330011",
           "runAttempt": 1,
-          "isFlaky": false,
+          "isFlaky": true,
           "prMerged": false
         },
         {
-          "date": "2026-06-18",
-          "prNumber": "13241",
-          "prTitle": "agent: report 128+signal as exit code for signal-terminated processes",
-          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-memory",
-          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-memory",
-          "jobId": "82251005235",
-          "runId": "27793189300",
+          "date": "2026-06-19",
+          "prNumber": "13245",
+          "prTitle": "Unify nix version",
+          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee (qemu-coco-dev-runtime-rs, nydus, guest-pull)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee (qemu-coco-dev-runtime-rs, nydus, guest-pull)",
+          "jobId": "82316419220",
+          "runId": "27814330011",
           "runAttempt": 1,
-          "isFlaky": false,
+          "isFlaky": true,
+          "prMerged": false
+        }
+      ]
+    },
+    {
+      "name": "Liveness probe",
+      "file": "k8s-liveness-probes.bats",
+      "totalFailures": 2,
+      "flakyCount": 2,
+      "mergedCount": 0,
+      "isConfirmedFlaky": true,
+      "mergedDespiteFailure": false,
+      "uniquePRs": 1,
+      "uniqueDates": [
+        "2026-06-19"
+      ],
+      "affectedJobs": [
+        {
+          "name": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu-runtime-rs, minimum)",
+          "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu-runtime-rs, minimum)",
+          "count": 2,
+          "flakyCount": 2,
+          "mergedCount": 0
+        }
+      ],
+      "recentOccurrences": [
+        {
+          "date": "2026-06-19",
+          "prNumber": "13245",
+          "prTitle": "Unify nix version",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu-runtime-rs, minimum)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu-runtime-rs, minimum)",
+          "jobId": "82316419251",
+          "runId": "27814330011",
+          "runAttempt": 1,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-19",
+          "prNumber": "13245",
+          "prTitle": "Unify nix version",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu-runtime-rs, minimum)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu-runtime-rs, minimum)",
+          "jobId": "82316419251",
+          "runId": "27814330011",
+          "runAttempt": 1,
+          "isFlaky": true,
           "prMerged": false
         }
       ]
@@ -2424,14 +2664,14 @@
     }
   ],
   "summary": {
-    "totalFailedTests": 26,
-    "confirmedFlaky": 24,
+    "totalFailedTests": 27,
+    "confirmedFlaky": 26,
     "mergedDespiteFailure": 2,
     "mostAffectedJob": {
       "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
       "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-      "count": 36,
-      "flakyCount": 20,
+      "count": 44,
+      "flakyCount": 30,
       "mergedCount": 4
     },
     "trend": [
@@ -2477,15 +2717,15 @@
       },
       {
         "date": "2026-06-17",
-        "failures": 64
+        "failures": 60
       },
       {
         "date": "2026-06-18",
-        "failures": 38
+        "failures": 36
       },
       {
         "date": "2026-06-19",
-        "failures": 30
+        "failures": 54
       },
       {
         "date": "2026-06-20",
@@ -2496,15 +2736,15 @@
       {
         "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
         "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-        "count": 36,
-        "flakyCount": 20,
+        "count": 44,
+        "flakyCount": 30,
         "mergedCount": 4
       },
       {
         "name": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee (qemu-coco-dev-runtime-rs, nydus, guest-pull)",
         "displayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee (qemu-coco-dev-runtime-rs, nydus, guest-pull)",
-        "count": 32,
-        "flakyCount": 32,
+        "count": 34,
+        "flakyCount": 34,
         "mergedCount": 0
       },
       {
@@ -2517,8 +2757,8 @@
       {
         "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
         "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-        "count": 18,
-        "flakyCount": 18,
+        "count": 26,
+        "flakyCount": 26,
         "mergedCount": 0
       },
       {
@@ -2557,10 +2797,10 @@
         "mergedCount": 2
       },
       {
-        "name": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-memory",
-        "displayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-memory",
+        "name": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu-runtime-rs, minimum)",
+        "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu-runtime-rs, minimum)",
         "count": 2,
-        "flakyCount": 0,
+        "flakyCount": 2,
         "mergedCount": 0
       }
     ]
