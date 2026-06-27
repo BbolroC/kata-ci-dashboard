@@ -1,20 +1,20 @@
 {
-  "lastRefresh": "2026-06-27T02:14:25.467Z",
+  "lastRefresh": "2026-06-27T06:53:39.373Z",
   "periodDays": 14,
-  "totalFailures": 218,
+  "totalFailures": 224,
   "totalPRs": 12,
-  "confirmedFlakyCount": 19,
+  "confirmedFlakyCount": 22,
   "mergedDespiteFailureCount": 9,
   "failedTests": [
     {
       "name": "Pods establishing a VPN connection using openvpn",
       "file": "k8s-openvpn.bats",
-      "totalFailures": 36,
-      "flakyCount": 16,
+      "totalFailures": 34,
+      "flakyCount": 14,
       "mergedCount": 8,
       "isConfirmedFlaky": true,
       "mergedDespiteFailure": true,
-      "uniquePRs": 11,
+      "uniquePRs": 10,
       "uniqueDates": [
         "2026-06-26",
         "2026-06-25",
@@ -24,8 +24,8 @@
         {
           "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "count": 14,
-          "flakyCount": 8,
+          "count": 12,
+          "flakyCount": 6,
           "mergedCount": 0
         },
         {
@@ -159,30 +159,6 @@
           "runId": "28239997736",
           "runAttempt": 1,
           "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-26",
-          "prNumber": "13284",
-          "prTitle": "kata-deploy: remove configurable startup taints after install",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobId": "83733556353",
-          "runId": "28259354909",
-          "runAttempt": 1,
-          "isFlaky": true,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-26",
-          "prNumber": "13284",
-          "prTitle": "kata-deploy: remove configurable startup taints after install",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobId": "83733556353",
-          "runId": "28259354909",
-          "runAttempt": 1,
-          "isFlaky": true,
           "prMerged": false
         },
         {
@@ -502,12 +478,12 @@
     {
       "name": "Empty dir volume when FSGroup is specified with non-root container",
       "file": "k8s-empty-dirs.bats",
-      "totalFailures": 32,
-      "flakyCount": 12,
+      "totalFailures": 30,
+      "flakyCount": 10,
       "mergedCount": 4,
       "isConfirmedFlaky": true,
       "mergedDespiteFailure": true,
-      "uniquePRs": 10,
+      "uniquePRs": 9,
       "uniqueDates": [
         "2026-06-26",
         "2026-06-24"
@@ -516,8 +492,8 @@
         {
           "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "count": 14,
-          "flakyCount": 8,
+          "count": 12,
+          "flakyCount": 6,
           "mergedCount": 0
         },
         {
@@ -637,30 +613,6 @@
           "runId": "28239997736",
           "runAttempt": 1,
           "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-26",
-          "prNumber": "13284",
-          "prTitle": "kata-deploy: remove configurable startup taints after install",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobId": "83733556353",
-          "runId": "28259354909",
-          "runAttempt": 1,
-          "isFlaky": true,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-26",
-          "prNumber": "13284",
-          "prTitle": "kata-deploy: remove configurable startup taints after install",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobId": "83733556353",
-          "runId": "28259354909",
-          "runAttempt": 1,
-          "isFlaky": true,
           "prMerged": false
         },
         {
@@ -1101,9 +1053,9 @@
           "prTitle": "kata-deploy: remove configurable startup taints after install",
           "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
           "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
-          "jobId": "83732113572",
+          "jobId": "83781761009",
           "runId": "28259354909",
-          "runAttempt": 1,
+          "runAttempt": 2,
           "isFlaky": true,
           "prMerged": false
         },
@@ -1113,9 +1065,9 @@
           "prTitle": "kata-deploy: remove configurable startup taints after install",
           "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
           "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
-          "jobId": "83732113572",
+          "jobId": "83781761009",
           "runId": "28259354909",
-          "runAttempt": 1,
+          "runAttempt": 2,
           "isFlaky": true,
           "prMerged": false
         },
@@ -1196,12 +1148,12 @@
     {
       "name": "Pod that performs ip6tables setup",
       "file": "k8s-ip6tables.bats",
-      "totalFailures": 20,
-      "flakyCount": 12,
+      "totalFailures": 18,
+      "flakyCount": 10,
       "mergedCount": 2,
       "isConfirmedFlaky": true,
       "mergedDespiteFailure": true,
-      "uniquePRs": 8,
+      "uniquePRs": 7,
       "uniqueDates": [
         "2026-06-26",
         "2026-06-25"
@@ -1210,8 +1162,8 @@
         {
           "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "count": 14,
-          "flakyCount": 8,
+          "count": 12,
+          "flakyCount": 6,
           "mergedCount": 0
         },
         {
@@ -1324,30 +1276,6 @@
           "runId": "28239997736",
           "runAttempt": 1,
           "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-26",
-          "prNumber": "13284",
-          "prTitle": "kata-deploy: remove configurable startup taints after install",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobId": "83733556353",
-          "runId": "28259354909",
-          "runAttempt": 1,
-          "isFlaky": true,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-26",
-          "prNumber": "13284",
-          "prTitle": "kata-deploy: remove configurable startup taints after install",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobId": "83733556353",
-          "runId": "28259354909",
-          "runAttempt": 1,
-          "isFlaky": true,
           "prMerged": false
         },
         {
@@ -1475,12 +1403,12 @@
     {
       "name": "Liveness http probe",
       "file": "k8s-liveness-probes.bats",
-      "totalFailures": 18,
-      "flakyCount": 10,
+      "totalFailures": 16,
+      "flakyCount": 8,
       "mergedCount": 0,
       "isConfirmedFlaky": true,
       "mergedDespiteFailure": false,
-      "uniquePRs": 7,
+      "uniquePRs": 6,
       "uniqueDates": [
         "2026-06-26"
       ],
@@ -1488,8 +1416,8 @@
         {
           "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "count": 14,
-          "flakyCount": 8,
+          "count": 12,
+          "flakyCount": 6,
           "mergedCount": 0
         },
         {
@@ -1595,30 +1523,6 @@
           "runId": "28239997736",
           "runAttempt": 1,
           "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-26",
-          "prNumber": "13284",
-          "prTitle": "kata-deploy: remove configurable startup taints after install",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobId": "83733556353",
-          "runId": "28259354909",
-          "runAttempt": 1,
-          "isFlaky": true,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-26",
-          "prNumber": "13284",
-          "prTitle": "kata-deploy: remove configurable startup taints after install",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobId": "83733556353",
-          "runId": "28259354909",
-          "runAttempt": 1,
-          "isFlaky": true,
           "prMerged": false
         },
         {
@@ -1722,12 +1626,12 @@
     {
       "name": "Liveness tcp probe",
       "file": "k8s-liveness-probes.bats",
-      "totalFailures": 18,
-      "flakyCount": 10,
+      "totalFailures": 16,
+      "flakyCount": 8,
       "mergedCount": 0,
       "isConfirmedFlaky": true,
       "mergedDespiteFailure": false,
-      "uniquePRs": 7,
+      "uniquePRs": 6,
       "uniqueDates": [
         "2026-06-26"
       ],
@@ -1735,8 +1639,8 @@
         {
           "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "count": 14,
-          "flakyCount": 8,
+          "count": 12,
+          "flakyCount": 6,
           "mergedCount": 0
         },
         {
@@ -1842,30 +1746,6 @@
           "runId": "28239997736",
           "runAttempt": 1,
           "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-26",
-          "prNumber": "13284",
-          "prTitle": "kata-deploy: remove configurable startup taints after install",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobId": "83733556353",
-          "runId": "28259354909",
-          "runAttempt": 1,
-          "isFlaky": true,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-26",
-          "prNumber": "13284",
-          "prTitle": "kata-deploy: remove configurable startup taints after install",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobId": "83733556353",
-          "runId": "28259354909",
-          "runAttempt": 1,
-          "isFlaky": true,
           "prMerged": false
         },
         {
@@ -2596,12 +2476,12 @@
       ]
     },
     {
-      "name": "Running within memory constraints",
-      "file": "k8s-memory.bats",
-      "totalFailures": 2,
-      "flakyCount": 0,
+      "name": "Plain ephemeral data storage",
+      "file": "k8s-plain-ephemeral-data-storage.bats",
+      "totalFailures": 6,
+      "flakyCount": 4,
       "mergedCount": 0,
-      "isConfirmedFlaky": false,
+      "isConfirmedFlaky": true,
       "mergedDespiteFailure": false,
       "uniquePRs": 1,
       "uniqueDates": [
@@ -2609,10 +2489,24 @@
       ],
       "affectedJobs": [
         {
+          "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "count": 2,
+          "flakyCount": 2,
+          "mergedCount": 0
+        },
+        {
           "name": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-disk-dmverity",
           "displayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-disk-dmverity",
           "count": 2,
           "flakyCount": 0,
+          "mergedCount": 0
+        },
+        {
+          "name": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
+          "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
+          "count": 2,
+          "flakyCount": 2,
           "mergedCount": 0
         }
       ],
@@ -2621,11 +2515,35 @@
           "date": "2026-06-26",
           "prNumber": "13284",
           "prTitle": "kata-deploy: remove configurable startup taints after install",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobId": "83781760444",
+          "runId": "28259354909",
+          "runAttempt": 2,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-26",
+          "prNumber": "13284",
+          "prTitle": "kata-deploy: remove configurable startup taints after install",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobId": "83781760444",
+          "runId": "28259354909",
+          "runAttempt": 2,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-26",
+          "prNumber": "13284",
+          "prTitle": "kata-deploy: remove configurable startup taints after install",
           "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-disk-dmverity",
           "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-disk-dmverity",
-          "jobId": "83732113925",
+          "jobId": "83781760971",
           "runId": "28259354909",
-          "runAttempt": 1,
+          "runAttempt": 2,
           "isFlaky": false,
           "prMerged": false
         },
@@ -2635,10 +2553,254 @@
           "prTitle": "kata-deploy: remove configurable startup taints after install",
           "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-disk-dmverity",
           "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-disk-dmverity",
-          "jobId": "83732113925",
+          "jobId": "83781760971",
           "runId": "28259354909",
-          "runAttempt": 1,
+          "runAttempt": 2,
           "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-26",
+          "prNumber": "13284",
+          "prTitle": "kata-deploy: remove configurable startup taints after install",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
+          "jobId": "83781761009",
+          "runId": "28259354909",
+          "runAttempt": 2,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-26",
+          "prNumber": "13284",
+          "prTitle": "kata-deploy: remove configurable startup taints after install",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
+          "jobId": "83781761009",
+          "runId": "28259354909",
+          "runAttempt": 2,
+          "isFlaky": true,
+          "prMerged": false
+        }
+      ]
+    },
+    {
+      "name": "Plain ephemeral data storage sizeLimit evicts pod",
+      "file": "k8s-plain-ephemeral-data-storage.bats",
+      "totalFailures": 6,
+      "flakyCount": 4,
+      "mergedCount": 0,
+      "isConfirmedFlaky": true,
+      "mergedDespiteFailure": false,
+      "uniquePRs": 1,
+      "uniqueDates": [
+        "2026-06-26"
+      ],
+      "affectedJobs": [
+        {
+          "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "count": 2,
+          "flakyCount": 2,
+          "mergedCount": 0
+        },
+        {
+          "name": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-disk-dmverity",
+          "displayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-disk-dmverity",
+          "count": 2,
+          "flakyCount": 0,
+          "mergedCount": 0
+        },
+        {
+          "name": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
+          "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
+          "count": 2,
+          "flakyCount": 2,
+          "mergedCount": 0
+        }
+      ],
+      "recentOccurrences": [
+        {
+          "date": "2026-06-26",
+          "prNumber": "13284",
+          "prTitle": "kata-deploy: remove configurable startup taints after install",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobId": "83781760444",
+          "runId": "28259354909",
+          "runAttempt": 2,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-26",
+          "prNumber": "13284",
+          "prTitle": "kata-deploy: remove configurable startup taints after install",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobId": "83781760444",
+          "runId": "28259354909",
+          "runAttempt": 2,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-26",
+          "prNumber": "13284",
+          "prTitle": "kata-deploy: remove configurable startup taints after install",
+          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-disk-dmverity",
+          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-disk-dmverity",
+          "jobId": "83781760971",
+          "runId": "28259354909",
+          "runAttempt": 2,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-26",
+          "prNumber": "13284",
+          "prTitle": "kata-deploy: remove configurable startup taints after install",
+          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-disk-dmverity",
+          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-disk-dmverity",
+          "jobId": "83781760971",
+          "runId": "28259354909",
+          "runAttempt": 2,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-26",
+          "prNumber": "13284",
+          "prTitle": "kata-deploy: remove configurable startup taints after install",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
+          "jobId": "83781761009",
+          "runId": "28259354909",
+          "runAttempt": 2,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-26",
+          "prNumber": "13284",
+          "prTitle": "kata-deploy: remove configurable startup taints after install",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
+          "jobId": "83781761009",
+          "runId": "28259354909",
+          "runAttempt": 2,
+          "isFlaky": true,
+          "prMerged": false
+        }
+      ]
+    },
+    {
+      "name": "Plain ephemeral data storage discard reclaims host blocks",
+      "file": "k8s-plain-ephemeral-data-storage.bats",
+      "totalFailures": 6,
+      "flakyCount": 4,
+      "mergedCount": 0,
+      "isConfirmedFlaky": true,
+      "mergedDespiteFailure": false,
+      "uniquePRs": 1,
+      "uniqueDates": [
+        "2026-06-26"
+      ],
+      "affectedJobs": [
+        {
+          "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "count": 2,
+          "flakyCount": 2,
+          "mergedCount": 0
+        },
+        {
+          "name": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-disk-dmverity",
+          "displayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-disk-dmverity",
+          "count": 2,
+          "flakyCount": 0,
+          "mergedCount": 0
+        },
+        {
+          "name": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
+          "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
+          "count": 2,
+          "flakyCount": 2,
+          "mergedCount": 0
+        }
+      ],
+      "recentOccurrences": [
+        {
+          "date": "2026-06-26",
+          "prNumber": "13284",
+          "prTitle": "kata-deploy: remove configurable startup taints after install",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobId": "83781760444",
+          "runId": "28259354909",
+          "runAttempt": 2,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-26",
+          "prNumber": "13284",
+          "prTitle": "kata-deploy: remove configurable startup taints after install",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
+          "jobId": "83781760444",
+          "runId": "28259354909",
+          "runAttempt": 2,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-26",
+          "prNumber": "13284",
+          "prTitle": "kata-deploy: remove configurable startup taints after install",
+          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-disk-dmverity",
+          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-disk-dmverity",
+          "jobId": "83781760971",
+          "runId": "28259354909",
+          "runAttempt": 2,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-26",
+          "prNumber": "13284",
+          "prTitle": "kata-deploy: remove configurable startup taints after install",
+          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-disk-dmverity",
+          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-disk-dmverity",
+          "jobId": "83781760971",
+          "runId": "28259354909",
+          "runAttempt": 2,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-26",
+          "prNumber": "13284",
+          "prTitle": "kata-deploy: remove configurable startup taints after install",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
+          "jobId": "83781761009",
+          "runId": "28259354909",
+          "runAttempt": 2,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-26",
+          "prNumber": "13284",
+          "prTitle": "kata-deploy: remove configurable startup taints after install",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
+          "jobId": "83781761009",
+          "runId": "28259354909",
+          "runAttempt": 2,
+          "isFlaky": true,
           "prMerged": false
         }
       ]
@@ -3317,14 +3479,14 @@
     }
   ],
   "summary": {
-    "totalFailedTests": 24,
-    "confirmedFlaky": 19,
+    "totalFailedTests": 26,
+    "confirmedFlaky": 22,
     "mergedDespiteFailure": 9,
     "mostAffectedJob": {
       "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
       "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-      "count": 70,
-      "flakyCount": 40,
+      "count": 66,
+      "flakyCount": 36,
       "mergedCount": 0
     },
     "trend": [
@@ -3378,7 +3540,7 @@
       },
       {
         "date": "2026-06-26",
-        "failures": 124
+        "failures": 130
       },
       {
         "date": "2026-06-27",
@@ -3389,15 +3551,15 @@
       {
         "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
         "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-        "count": 70,
-        "flakyCount": 40,
+        "count": 66,
+        "flakyCount": 36,
         "mergedCount": 0
       },
       {
         "name": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
         "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
-        "count": 60,
-        "flakyCount": 14,
+        "count": 66,
+        "flakyCount": 20,
         "mergedCount": 12
       },
       {
@@ -3412,6 +3574,13 @@
         "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
         "count": 20,
         "flakyCount": 10,
+        "mergedCount": 0
+      },
+      {
+        "name": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-disk-dmverity",
+        "displayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-disk-dmverity",
+        "count": 6,
+        "flakyCount": 0,
         "mergedCount": 0
       },
       {
@@ -3448,13 +3617,6 @@
         "count": 2,
         "flakyCount": 2,
         "mergedCount": 2
-      },
-      {
-        "name": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-disk-dmverity",
-        "displayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-disk-dmverity",
-        "count": 2,
-        "flakyCount": 0,
-        "mergedCount": 0
       }
     ]
   }
