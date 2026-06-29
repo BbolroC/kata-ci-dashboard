@@ -1,9 +1,9 @@
 {
-  "lastRefresh": "2026-06-29T15:34:54.884Z",
+  "lastRefresh": "2026-06-29T18:10:02.622Z",
   "periodDays": 14,
-  "totalFailures": 136,
+  "totalFailures": 134,
   "totalPRs": 12,
-  "confirmedFlakyCount": 16,
+  "confirmedFlakyCount": 17,
   "mergedDespiteFailureCount": 7,
   "failedTests": [
     {
@@ -59,9 +59,9 @@
           "prTitle": "versions: Update quinn-proto to 0.11.15",
           "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
           "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
-          "jobId": "84061640197",
+          "jobId": "84094882294",
           "runId": "28373605885",
-          "runAttempt": 1,
+          "runAttempt": 2,
           "isFlaky": false,
           "prMerged": false
         },
@@ -71,9 +71,9 @@
           "prTitle": "versions: Update quinn-proto to 0.11.15",
           "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
           "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
-          "jobId": "84061640197",
+          "jobId": "84094882294",
           "runId": "28373605885",
-          "runAttempt": 1,
+          "runAttempt": 2,
           "isFlaky": false,
           "prMerged": false
         },
@@ -1645,28 +1645,28 @@
       ]
     },
     {
-      "name": "Scale nginx deployment",
-      "file": "k8s-scale-nginx.bats",
+      "name": "vCPU pinning: Guaranteed pod vCPU threads are pinned 1:1 to host CPUs",
+      "file": "k8s-vcpu-pinning.bats",
       "totalFailures": 4,
       "flakyCount": 2,
       "mergedCount": 0,
       "isConfirmedFlaky": true,
       "mergedDespiteFailure": false,
-      "uniquePRs": 2,
+      "uniquePRs": 1,
       "uniqueDates": [
         "2026-06-29"
       ],
       "affectedJobs": [
         {
-          "name": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (clh-runtime-rs, minimum)",
-          "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (clh-runtime-rs, minimum)",
+          "name": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-snp-runtime-rs-tests-on-amd64",
+          "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-snp-runtime-rs-tests-on-amd64",
           "count": 2,
           "flakyCount": 0,
           "mergedCount": 0
         },
         {
-          "name": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-memory-dmverity",
-          "displayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-memory-dmverity",
+          "name": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-runtime-rs-tests-on-amd64",
+          "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-runtime-rs-tests-on-amd64",
           "count": 2,
           "flakyCount": 2,
           "mergedCount": 0
@@ -1675,24 +1675,12 @@
       "recentOccurrences": [
         {
           "date": "2026-06-29",
-          "prNumber": "13301",
-          "prTitle": "versions: Update quinn-proto to 0.11.15",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (clh-runtime-rs, minimum)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (clh-runtime-rs, minimum)",
-          "jobId": "84061640066",
-          "runId": "28373605885",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-29",
-          "prNumber": "13301",
-          "prTitle": "versions: Update quinn-proto to 0.11.15",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (clh-runtime-rs, minimum)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (clh-runtime-rs, minimum)",
-          "jobId": "84061640066",
-          "runId": "28373605885",
+          "prNumber": "13300",
+          "prTitle": "runtime-rs: fix vCPU pinning silently disabled with overhead_vcpus > 0",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-snp-runtime-rs-tests-on-amd64",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-snp-runtime-rs-tests-on-amd64",
+          "jobId": "84084543898",
+          "runId": "28379819437",
           "runAttempt": 1,
           "isFlaky": false,
           "prMerged": false
@@ -1701,9 +1689,21 @@
           "date": "2026-06-29",
           "prNumber": "13300",
           "prTitle": "runtime-rs: fix vCPU pinning silently disabled with overhead_vcpus > 0",
-          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-memory-dmverity",
-          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-memory-dmverity",
-          "jobId": "84036484191",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-snp-runtime-rs-tests-on-amd64",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-snp-runtime-rs-tests-on-amd64",
+          "jobId": "84084543898",
+          "runId": "28379819437",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-29",
+          "prNumber": "13300",
+          "prTitle": "runtime-rs: fix vCPU pinning silently disabled with overhead_vcpus > 0",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-runtime-rs-tests-on-amd64",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-runtime-rs-tests-on-amd64",
+          "jobId": "84036483602",
           "runId": "28366245804",
           "runAttempt": 1,
           "isFlaky": true,
@@ -1713,9 +1713,9 @@
           "date": "2026-06-29",
           "prNumber": "13300",
           "prTitle": "runtime-rs: fix vCPU pinning silently disabled with overhead_vcpus > 0",
-          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-memory-dmverity",
-          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-memory-dmverity",
-          "jobId": "84036484191",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-runtime-rs-tests-on-amd64",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-runtime-rs-tests-on-amd64",
+          "jobId": "84036483602",
           "runId": "28366245804",
           "runAttempt": 1,
           "isFlaky": true,
@@ -1767,102 +1767,6 @@
           "runId": "28377715696",
           "runAttempt": 1,
           "isFlaky": true,
-          "prMerged": false
-        }
-      ]
-    },
-    {
-      "name": "Check custom dns",
-      "file": "k8s-custom-dns.bats",
-      "totalFailures": 2,
-      "flakyCount": 0,
-      "mergedCount": 0,
-      "isConfirmedFlaky": false,
-      "mergedDespiteFailure": false,
-      "uniquePRs": 1,
-      "uniqueDates": [
-        "2026-06-29"
-      ],
-      "affectedJobs": [
-        {
-          "name": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu-runtime-rs, minimum)",
-          "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu-runtime-rs, minimum)",
-          "count": 2,
-          "flakyCount": 0,
-          "mergedCount": 0
-        }
-      ],
-      "recentOccurrences": [
-        {
-          "date": "2026-06-29",
-          "prNumber": "13301",
-          "prTitle": "versions: Update quinn-proto to 0.11.15",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu-runtime-rs, minimum)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu-runtime-rs, minimum)",
-          "jobId": "84061640150",
-          "runId": "28373605885",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-29",
-          "prNumber": "13301",
-          "prTitle": "versions: Update quinn-proto to 0.11.15",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu-runtime-rs, minimum)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu-runtime-rs, minimum)",
-          "jobId": "84061640150",
-          "runId": "28373605885",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        }
-      ]
-    },
-    {
-      "name": "vCPU pinning: Guaranteed pod vCPU threads are pinned 1:1 to host CPUs",
-      "file": "k8s-vcpu-pinning.bats",
-      "totalFailures": 2,
-      "flakyCount": 0,
-      "mergedCount": 0,
-      "isConfirmedFlaky": false,
-      "mergedDespiteFailure": false,
-      "uniquePRs": 1,
-      "uniqueDates": [
-        "2026-06-29"
-      ],
-      "affectedJobs": [
-        {
-          "name": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-runtime-rs-tests-on-amd64",
-          "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-runtime-rs-tests-on-amd64",
-          "count": 2,
-          "flakyCount": 0,
-          "mergedCount": 0
-        }
-      ],
-      "recentOccurrences": [
-        {
-          "date": "2026-06-29",
-          "prNumber": "13300",
-          "prTitle": "runtime-rs: fix vCPU pinning silently disabled with overhead_vcpus > 0",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-runtime-rs-tests-on-amd64",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-runtime-rs-tests-on-amd64",
-          "jobId": "84036483602",
-          "runId": "28366245804",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-29",
-          "prNumber": "13300",
-          "prTitle": "runtime-rs: fix vCPU pinning silently disabled with overhead_vcpus > 0",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-runtime-rs-tests-on-amd64",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-runtime-rs-tests-on-amd64",
-          "jobId": "84036483602",
-          "runId": "28366245804",
-          "runAttempt": 1,
-          "isFlaky": false,
           "prMerged": false
         }
       ]
@@ -1959,6 +1863,54 @@
           "runId": "28366245804",
           "runAttempt": 1,
           "isFlaky": false,
+          "prMerged": false
+        }
+      ]
+    },
+    {
+      "name": "Scale nginx deployment",
+      "file": "k8s-scale-nginx.bats",
+      "totalFailures": 2,
+      "flakyCount": 2,
+      "mergedCount": 0,
+      "isConfirmedFlaky": true,
+      "mergedDespiteFailure": false,
+      "uniquePRs": 1,
+      "uniqueDates": [
+        "2026-06-29"
+      ],
+      "affectedJobs": [
+        {
+          "name": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-memory-dmverity",
+          "displayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-memory-dmverity",
+          "count": 2,
+          "flakyCount": 2,
+          "mergedCount": 0
+        }
+      ],
+      "recentOccurrences": [
+        {
+          "date": "2026-06-29",
+          "prNumber": "13300",
+          "prTitle": "runtime-rs: fix vCPU pinning silently disabled with overhead_vcpus > 0",
+          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-memory-dmverity",
+          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-memory-dmverity",
+          "jobId": "84036484191",
+          "runId": "28366245804",
+          "runAttempt": 1,
+          "isFlaky": true,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-29",
+          "prNumber": "13300",
+          "prTitle": "runtime-rs: fix vCPU pinning silently disabled with overhead_vcpus > 0",
+          "jobName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-memory-dmverity",
+          "jobDisplayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-memory-dmverity",
+          "jobId": "84036484191",
+          "runId": "28366245804",
+          "runAttempt": 1,
+          "isFlaky": true,
           "prMerged": false
         }
       ]
@@ -2205,8 +2157,8 @@
     }
   ],
   "summary": {
-    "totalFailedTests": 20,
-    "confirmedFlaky": 16,
+    "totalFailedTests": 19,
+    "confirmedFlaky": 17,
     "mergedDespiteFailure": 7,
     "mostAffectedJob": {
       "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
@@ -2270,7 +2222,7 @@
       },
       {
         "date": "2026-06-29",
-        "failures": 32
+        "failures": 30
       }
     ],
     "jobBreakdown": [
@@ -2303,13 +2255,6 @@
         "mergedCount": 0
       },
       {
-        "name": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (clh-runtime-rs, minimum)",
-        "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (clh-runtime-rs, minimum)",
-        "count": 4,
-        "flakyCount": 2,
-        "mergedCount": 0
-      },
-      {
         "name": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (dragonball, latest)",
         "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (dragonball, latest)",
         "count": 4,
@@ -2317,15 +2262,8 @@
         "mergedCount": 0
       },
       {
-        "name": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-memory-dmverity",
-        "displayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-memory-dmverity",
-        "count": 2,
-        "flakyCount": 2,
-        "mergedCount": 0
-      },
-      {
-        "name": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu-runtime-rs, minimum)",
-        "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu-runtime-rs, minimum)",
+        "name": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-snp-runtime-rs-tests-on-amd64",
+        "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-snp-runtime-rs-tests-on-amd64",
         "count": 2,
         "flakyCount": 0,
         "mergedCount": 0
@@ -2334,12 +2272,26 @@
         "name": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-runtime-rs-tests-on-amd64",
         "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-runtime-rs-tests-on-amd64",
         "count": 2,
-        "flakyCount": 0,
+        "flakyCount": 2,
+        "mergedCount": 0
+      },
+      {
+        "name": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (clh-runtime-rs, minimum)",
+        "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (clh-runtime-rs, minimum)",
+        "count": 2,
+        "flakyCount": 2,
         "mergedCount": 0
       },
       {
         "name": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (dragonball, minimum)",
         "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (dragonball, minimum)",
+        "count": 2,
+        "flakyCount": 2,
+        "mergedCount": 0
+      },
+      {
+        "name": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-memory-dmverity",
+        "displayName": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-memory-dmverity",
         "count": 2,
         "flakyCount": 2,
         "mergedCount": 0
