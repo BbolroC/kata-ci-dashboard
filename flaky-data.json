@@ -1,20 +1,20 @@
 {
-  "lastRefresh": "2026-06-30T10:54:24.123Z",
+  "lastRefresh": "2026-06-30T14:00:17.651Z",
   "periodDays": 14,
   "totalFailures": 176,
   "totalPRs": 13,
-  "confirmedFlakyCount": 13,
-  "mergedDespiteFailureCount": 7,
+  "confirmedFlakyCount": 12,
+  "mergedDespiteFailureCount": 9,
   "failedTests": [
     {
       "name": "Pod can be created with a templated VM",
       "file": "k8s-vm-templating.bats",
       "totalFailures": 36,
-      "flakyCount": 2,
-      "mergedCount": 10,
-      "isConfirmedFlaky": true,
+      "flakyCount": 0,
+      "mergedCount": 14,
+      "isConfirmedFlaky": false,
       "mergedDespiteFailure": true,
-      "uniquePRs": 13,
+      "uniquePRs": 12,
       "uniqueDates": [
         "2026-06-30",
         "2026-06-29",
@@ -25,8 +25,8 @@
           "name": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
           "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
           "count": 36,
-          "flakyCount": 2,
-          "mergedCount": 10
+          "flakyCount": 0,
+          "mergedCount": 14
         }
       ],
       "recentOccurrences": [
@@ -55,6 +55,30 @@
           "prMerged": false
         },
         {
+          "date": "2026-06-30",
+          "prNumber": "13243",
+          "prTitle": "Build the kata host binaries (and payload) statically for musl-only hosts",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
+          "jobId": "84302408598",
+          "runId": "28445402158",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-30",
+          "prNumber": "13243",
+          "prTitle": "Build the kata host binaries (and payload) statically for musl-only hosts",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
+          "jobId": "84302408598",
+          "runId": "28445402158",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
           "date": "2026-06-29",
           "prNumber": "13303",
           "prTitle": "tests: test emptyDir sizeLimit eviction with virtio-fs",
@@ -225,26 +249,26 @@
         {
           "date": "2026-06-29",
           "prNumber": "13249",
-          "prTitle": "Thiserror update",
+          "prTitle": "Thiserror and path-absolutize update",
           "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
           "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
           "jobId": "84062517353",
           "runId": "28359296000",
           "runAttempt": 3,
           "isFlaky": false,
-          "prMerged": false
+          "prMerged": true
         },
         {
           "date": "2026-06-29",
           "prNumber": "13249",
-          "prTitle": "Thiserror update",
+          "prTitle": "Thiserror and path-absolutize update",
           "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
           "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
           "jobId": "84062517353",
           "runId": "28359296000",
           "runAttempt": 3,
           "isFlaky": false,
-          "prMerged": false
+          "prMerged": true
         },
         {
           "date": "2026-06-26",
@@ -392,49 +416,37 @@
         },
         {
           "date": "2026-06-26",
-          "prNumber": "13281",
-          "prTitle": "L3 forwarding network model for runtime-rs",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
-          "jobId": "83622576682",
-          "runId": "28226228651",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-26",
-          "prNumber": "13281",
-          "prTitle": "L3 forwarding network model for runtime-rs",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
-          "jobId": "83622576682",
-          "runId": "28226228651",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-26",
           "prNumber": "13249",
-          "prTitle": "Thiserror update",
+          "prTitle": "Thiserror and path-absolutize update",
           "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
           "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
           "jobId": "83654255727",
           "runId": "28235593644",
           "runAttempt": 1,
           "isFlaky": false,
-          "prMerged": false
+          "prMerged": true
         },
         {
           "date": "2026-06-26",
           "prNumber": "13249",
-          "prTitle": "Thiserror update",
+          "prTitle": "Thiserror and path-absolutize update",
           "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
           "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
           "jobId": "83654255727",
           "runId": "28235593644",
           "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": true
+        },
+        {
+          "date": "2026-06-26",
+          "prNumber": "13243",
+          "prTitle": "Build the kata host binaries (and payload) statically for musl-only hosts",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
+          "jobId": "83757183457",
+          "runId": "28231773651",
+          "runAttempt": 3,
           "isFlaky": false,
           "prMerged": false
         },
@@ -447,19 +459,7 @@
           "jobId": "83757183457",
           "runId": "28231773651",
           "runAttempt": 3,
-          "isFlaky": true,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-26",
-          "prNumber": "13243",
-          "prTitle": "Build the kata host binaries (and payload) statically for musl-only hosts",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
-          "jobId": "83757183457",
-          "runId": "28231773651",
-          "runAttempt": 3,
-          "isFlaky": true,
+          "isFlaky": false,
           "prMerged": false
         }
       ]
@@ -468,11 +468,11 @@
       "name": "Empty dir volume when FSGroup is specified with non-root container",
       "file": "k8s-empty-dirs.bats",
       "totalFailures": 14,
-      "flakyCount": 10,
-      "mergedCount": 2,
+      "flakyCount": 6,
+      "mergedCount": 4,
       "isConfirmedFlaky": true,
       "mergedDespiteFailure": true,
-      "uniquePRs": 6,
+      "uniquePRs": 5,
       "uniqueDates": [
         "2026-06-30",
         "2026-06-26"
@@ -481,15 +481,15 @@
         {
           "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "count": 12,
-          "flakyCount": 8,
-          "mergedCount": 2
+          "count": 10,
+          "flakyCount": 6,
+          "mergedCount": 4
         },
         {
           "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
           "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "count": 2,
-          "flakyCount": 2,
+          "count": 4,
+          "flakyCount": 0,
           "mergedCount": 0
         }
       ],
@@ -519,6 +519,30 @@
           "prMerged": false
         },
         {
+          "date": "2026-06-30",
+          "prNumber": "13243",
+          "prTitle": "Build the kata host binaries (and payload) statically for musl-only hosts",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "84301015161",
+          "runId": "28445402158",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-30",
+          "prNumber": "13243",
+          "prTitle": "Build the kata host binaries (and payload) statically for musl-only hosts",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "84301015161",
+          "runId": "28445402158",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
           "date": "2026-06-26",
           "prNumber": "13290",
           "prTitle": "runtime: fix multi-node pxb-pcie topology for dual-socket GPU pods",
@@ -568,50 +592,38 @@
         },
         {
           "date": "2026-06-26",
-          "prNumber": "13281",
-          "prTitle": "L3 forwarding network model for runtime-rs",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobId": "83623259868",
-          "runId": "28226228651",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-26",
-          "prNumber": "13281",
-          "prTitle": "L3 forwarding network model for runtime-rs",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobId": "83623259868",
-          "runId": "28226228651",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-26",
           "prNumber": "13249",
-          "prTitle": "Thiserror update",
+          "prTitle": "Thiserror and path-absolutize update",
           "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "jobId": "83654229425",
           "runId": "28235593644",
           "runAttempt": 1,
           "isFlaky": true,
-          "prMerged": false
+          "prMerged": true
         },
         {
           "date": "2026-06-26",
           "prNumber": "13249",
-          "prTitle": "Thiserror update",
+          "prTitle": "Thiserror and path-absolutize update",
           "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "jobId": "83654229425",
           "runId": "28235593644",
           "runAttempt": 1,
           "isFlaky": true,
+          "prMerged": true
+        },
+        {
+          "date": "2026-06-26",
+          "prNumber": "13243",
+          "prTitle": "Build the kata host binaries (and payload) statically for musl-only hosts",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "83757181433",
+          "runId": "28231773651",
+          "runAttempt": 3,
+          "isFlaky": false,
           "prMerged": false
         },
         {
@@ -623,19 +635,7 @@
           "jobId": "83757181433",
           "runId": "28231773651",
           "runAttempt": 3,
-          "isFlaky": true,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-26",
-          "prNumber": "13243",
-          "prTitle": "Build the kata host binaries (and payload) statically for musl-only hosts",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "jobId": "83757181433",
-          "runId": "28231773651",
-          "runAttempt": 3,
-          "isFlaky": true,
+          "isFlaky": false,
           "prMerged": false
         },
         {
@@ -647,7 +647,7 @@
           "jobId": "83757181443",
           "runId": "28231773651",
           "runAttempt": 3,
-          "isFlaky": true,
+          "isFlaky": false,
           "prMerged": false
         },
         {
@@ -659,7 +659,7 @@
           "jobId": "83757181443",
           "runId": "28231773651",
           "runAttempt": 3,
-          "isFlaky": true,
+          "isFlaky": false,
           "prMerged": false
         }
       ]
@@ -668,11 +668,11 @@
       "name": "Pod that performs ip6tables setup",
       "file": "k8s-ip6tables.bats",
       "totalFailures": 14,
-      "flakyCount": 10,
-      "mergedCount": 2,
+      "flakyCount": 6,
+      "mergedCount": 4,
       "isConfirmedFlaky": true,
       "mergedDespiteFailure": true,
-      "uniquePRs": 6,
+      "uniquePRs": 5,
       "uniqueDates": [
         "2026-06-30",
         "2026-06-26"
@@ -681,15 +681,15 @@
         {
           "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "count": 12,
-          "flakyCount": 8,
-          "mergedCount": 2
+          "count": 10,
+          "flakyCount": 6,
+          "mergedCount": 4
         },
         {
           "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
           "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "count": 2,
-          "flakyCount": 2,
+          "count": 4,
+          "flakyCount": 0,
           "mergedCount": 0
         }
       ],
@@ -719,6 +719,30 @@
           "prMerged": false
         },
         {
+          "date": "2026-06-30",
+          "prNumber": "13243",
+          "prTitle": "Build the kata host binaries (and payload) statically for musl-only hosts",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "84301015161",
+          "runId": "28445402158",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-30",
+          "prNumber": "13243",
+          "prTitle": "Build the kata host binaries (and payload) statically for musl-only hosts",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "84301015161",
+          "runId": "28445402158",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
           "date": "2026-06-26",
           "prNumber": "13290",
           "prTitle": "runtime: fix multi-node pxb-pcie topology for dual-socket GPU pods",
@@ -768,50 +792,38 @@
         },
         {
           "date": "2026-06-26",
-          "prNumber": "13281",
-          "prTitle": "L3 forwarding network model for runtime-rs",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobId": "83623259868",
-          "runId": "28226228651",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-26",
-          "prNumber": "13281",
-          "prTitle": "L3 forwarding network model for runtime-rs",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobId": "83623259868",
-          "runId": "28226228651",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-26",
           "prNumber": "13249",
-          "prTitle": "Thiserror update",
+          "prTitle": "Thiserror and path-absolutize update",
           "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "jobId": "83654229425",
           "runId": "28235593644",
           "runAttempt": 1,
           "isFlaky": true,
-          "prMerged": false
+          "prMerged": true
         },
         {
           "date": "2026-06-26",
           "prNumber": "13249",
-          "prTitle": "Thiserror update",
+          "prTitle": "Thiserror and path-absolutize update",
           "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "jobId": "83654229425",
           "runId": "28235593644",
           "runAttempt": 1,
           "isFlaky": true,
+          "prMerged": true
+        },
+        {
+          "date": "2026-06-26",
+          "prNumber": "13243",
+          "prTitle": "Build the kata host binaries (and payload) statically for musl-only hosts",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "83757181433",
+          "runId": "28231773651",
+          "runAttempt": 3,
+          "isFlaky": false,
           "prMerged": false
         },
         {
@@ -823,19 +835,7 @@
           "jobId": "83757181433",
           "runId": "28231773651",
           "runAttempt": 3,
-          "isFlaky": true,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-26",
-          "prNumber": "13243",
-          "prTitle": "Build the kata host binaries (and payload) statically for musl-only hosts",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "jobId": "83757181433",
-          "runId": "28231773651",
-          "runAttempt": 3,
-          "isFlaky": true,
+          "isFlaky": false,
           "prMerged": false
         },
         {
@@ -847,7 +847,7 @@
           "jobId": "83757181443",
           "runId": "28231773651",
           "runAttempt": 3,
-          "isFlaky": true,
+          "isFlaky": false,
           "prMerged": false
         },
         {
@@ -859,7 +859,7 @@
           "jobId": "83757181443",
           "runId": "28231773651",
           "runAttempt": 3,
-          "isFlaky": true,
+          "isFlaky": false,
           "prMerged": false
         }
       ]
@@ -868,11 +868,11 @@
       "name": "Liveness http probe",
       "file": "k8s-liveness-probes.bats",
       "totalFailures": 14,
-      "flakyCount": 10,
-      "mergedCount": 2,
+      "flakyCount": 6,
+      "mergedCount": 4,
       "isConfirmedFlaky": true,
       "mergedDespiteFailure": true,
-      "uniquePRs": 6,
+      "uniquePRs": 5,
       "uniqueDates": [
         "2026-06-30",
         "2026-06-26"
@@ -881,15 +881,15 @@
         {
           "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "count": 12,
-          "flakyCount": 8,
-          "mergedCount": 2
+          "count": 10,
+          "flakyCount": 6,
+          "mergedCount": 4
         },
         {
           "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
           "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "count": 2,
-          "flakyCount": 2,
+          "count": 4,
+          "flakyCount": 0,
           "mergedCount": 0
         }
       ],
@@ -919,6 +919,30 @@
           "prMerged": false
         },
         {
+          "date": "2026-06-30",
+          "prNumber": "13243",
+          "prTitle": "Build the kata host binaries (and payload) statically for musl-only hosts",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "84301015161",
+          "runId": "28445402158",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-30",
+          "prNumber": "13243",
+          "prTitle": "Build the kata host binaries (and payload) statically for musl-only hosts",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "84301015161",
+          "runId": "28445402158",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
           "date": "2026-06-26",
           "prNumber": "13290",
           "prTitle": "runtime: fix multi-node pxb-pcie topology for dual-socket GPU pods",
@@ -968,50 +992,38 @@
         },
         {
           "date": "2026-06-26",
-          "prNumber": "13281",
-          "prTitle": "L3 forwarding network model for runtime-rs",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobId": "83623259868",
-          "runId": "28226228651",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-26",
-          "prNumber": "13281",
-          "prTitle": "L3 forwarding network model for runtime-rs",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobId": "83623259868",
-          "runId": "28226228651",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-26",
           "prNumber": "13249",
-          "prTitle": "Thiserror update",
+          "prTitle": "Thiserror and path-absolutize update",
           "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "jobId": "83654229425",
           "runId": "28235593644",
           "runAttempt": 1,
           "isFlaky": true,
-          "prMerged": false
+          "prMerged": true
         },
         {
           "date": "2026-06-26",
           "prNumber": "13249",
-          "prTitle": "Thiserror update",
+          "prTitle": "Thiserror and path-absolutize update",
           "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "jobId": "83654229425",
           "runId": "28235593644",
           "runAttempt": 1,
           "isFlaky": true,
+          "prMerged": true
+        },
+        {
+          "date": "2026-06-26",
+          "prNumber": "13243",
+          "prTitle": "Build the kata host binaries (and payload) statically for musl-only hosts",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "83757181433",
+          "runId": "28231773651",
+          "runAttempt": 3,
+          "isFlaky": false,
           "prMerged": false
         },
         {
@@ -1023,19 +1035,7 @@
           "jobId": "83757181433",
           "runId": "28231773651",
           "runAttempt": 3,
-          "isFlaky": true,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-26",
-          "prNumber": "13243",
-          "prTitle": "Build the kata host binaries (and payload) statically for musl-only hosts",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "jobId": "83757181433",
-          "runId": "28231773651",
-          "runAttempt": 3,
-          "isFlaky": true,
+          "isFlaky": false,
           "prMerged": false
         },
         {
@@ -1047,7 +1047,7 @@
           "jobId": "83757181443",
           "runId": "28231773651",
           "runAttempt": 3,
-          "isFlaky": true,
+          "isFlaky": false,
           "prMerged": false
         },
         {
@@ -1059,7 +1059,7 @@
           "jobId": "83757181443",
           "runId": "28231773651",
           "runAttempt": 3,
-          "isFlaky": true,
+          "isFlaky": false,
           "prMerged": false
         }
       ]
@@ -1068,11 +1068,11 @@
       "name": "Liveness tcp probe",
       "file": "k8s-liveness-probes.bats",
       "totalFailures": 14,
-      "flakyCount": 10,
-      "mergedCount": 2,
+      "flakyCount": 6,
+      "mergedCount": 4,
       "isConfirmedFlaky": true,
       "mergedDespiteFailure": true,
-      "uniquePRs": 6,
+      "uniquePRs": 5,
       "uniqueDates": [
         "2026-06-30",
         "2026-06-26"
@@ -1081,15 +1081,15 @@
         {
           "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "count": 12,
-          "flakyCount": 8,
-          "mergedCount": 2
+          "count": 10,
+          "flakyCount": 6,
+          "mergedCount": 4
         },
         {
           "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
           "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "count": 2,
-          "flakyCount": 2,
+          "count": 4,
+          "flakyCount": 0,
           "mergedCount": 0
         }
       ],
@@ -1119,6 +1119,30 @@
           "prMerged": false
         },
         {
+          "date": "2026-06-30",
+          "prNumber": "13243",
+          "prTitle": "Build the kata host binaries (and payload) statically for musl-only hosts",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "84301015161",
+          "runId": "28445402158",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-30",
+          "prNumber": "13243",
+          "prTitle": "Build the kata host binaries (and payload) statically for musl-only hosts",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "84301015161",
+          "runId": "28445402158",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
           "date": "2026-06-26",
           "prNumber": "13290",
           "prTitle": "runtime: fix multi-node pxb-pcie topology for dual-socket GPU pods",
@@ -1168,50 +1192,38 @@
         },
         {
           "date": "2026-06-26",
-          "prNumber": "13281",
-          "prTitle": "L3 forwarding network model for runtime-rs",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobId": "83623259868",
-          "runId": "28226228651",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-26",
-          "prNumber": "13281",
-          "prTitle": "L3 forwarding network model for runtime-rs",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobId": "83623259868",
-          "runId": "28226228651",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-26",
           "prNumber": "13249",
-          "prTitle": "Thiserror update",
+          "prTitle": "Thiserror and path-absolutize update",
           "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "jobId": "83654229425",
           "runId": "28235593644",
           "runAttempt": 1,
           "isFlaky": true,
-          "prMerged": false
+          "prMerged": true
         },
         {
           "date": "2026-06-26",
           "prNumber": "13249",
-          "prTitle": "Thiserror update",
+          "prTitle": "Thiserror and path-absolutize update",
           "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "jobId": "83654229425",
           "runId": "28235593644",
           "runAttempt": 1,
           "isFlaky": true,
+          "prMerged": true
+        },
+        {
+          "date": "2026-06-26",
+          "prNumber": "13243",
+          "prTitle": "Build the kata host binaries (and payload) statically for musl-only hosts",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "83757181433",
+          "runId": "28231773651",
+          "runAttempt": 3,
+          "isFlaky": false,
           "prMerged": false
         },
         {
@@ -1223,19 +1235,7 @@
           "jobId": "83757181433",
           "runId": "28231773651",
           "runAttempt": 3,
-          "isFlaky": true,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-26",
-          "prNumber": "13243",
-          "prTitle": "Build the kata host binaries (and payload) statically for musl-only hosts",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "jobId": "83757181433",
-          "runId": "28231773651",
-          "runAttempt": 3,
-          "isFlaky": true,
+          "isFlaky": false,
           "prMerged": false
         },
         {
@@ -1247,7 +1247,7 @@
           "jobId": "83757181443",
           "runId": "28231773651",
           "runAttempt": 3,
-          "isFlaky": true,
+          "isFlaky": false,
           "prMerged": false
         },
         {
@@ -1259,7 +1259,7 @@
           "jobId": "83757181443",
           "runId": "28231773651",
           "runAttempt": 3,
-          "isFlaky": true,
+          "isFlaky": false,
           "prMerged": false
         }
       ]
@@ -1268,11 +1268,11 @@
       "name": "Pods establishing a VPN connection using openvpn",
       "file": "k8s-openvpn.bats",
       "totalFailures": 14,
-      "flakyCount": 10,
-      "mergedCount": 2,
+      "flakyCount": 6,
+      "mergedCount": 4,
       "isConfirmedFlaky": true,
       "mergedDespiteFailure": true,
-      "uniquePRs": 6,
+      "uniquePRs": 5,
       "uniqueDates": [
         "2026-06-30",
         "2026-06-26"
@@ -1281,15 +1281,15 @@
         {
           "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "count": 12,
-          "flakyCount": 8,
-          "mergedCount": 2
+          "count": 10,
+          "flakyCount": 6,
+          "mergedCount": 4
         },
         {
           "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
           "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "count": 2,
-          "flakyCount": 2,
+          "count": 4,
+          "flakyCount": 0,
           "mergedCount": 0
         }
       ],
@@ -1319,6 +1319,30 @@
           "prMerged": false
         },
         {
+          "date": "2026-06-30",
+          "prNumber": "13243",
+          "prTitle": "Build the kata host binaries (and payload) statically for musl-only hosts",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "84301015161",
+          "runId": "28445402158",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-30",
+          "prNumber": "13243",
+          "prTitle": "Build the kata host binaries (and payload) statically for musl-only hosts",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "84301015161",
+          "runId": "28445402158",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
           "date": "2026-06-26",
           "prNumber": "13290",
           "prTitle": "runtime: fix multi-node pxb-pcie topology for dual-socket GPU pods",
@@ -1368,50 +1392,38 @@
         },
         {
           "date": "2026-06-26",
-          "prNumber": "13281",
-          "prTitle": "L3 forwarding network model for runtime-rs",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobId": "83623259868",
-          "runId": "28226228651",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-26",
-          "prNumber": "13281",
-          "prTitle": "L3 forwarding network model for runtime-rs",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-          "jobId": "83623259868",
-          "runId": "28226228651",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-26",
           "prNumber": "13249",
-          "prTitle": "Thiserror update",
+          "prTitle": "Thiserror and path-absolutize update",
           "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "jobId": "83654229425",
           "runId": "28235593644",
           "runAttempt": 1,
           "isFlaky": true,
-          "prMerged": false
+          "prMerged": true
         },
         {
           "date": "2026-06-26",
           "prNumber": "13249",
-          "prTitle": "Thiserror update",
+          "prTitle": "Thiserror and path-absolutize update",
           "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "jobId": "83654229425",
           "runId": "28235593644",
           "runAttempt": 1,
           "isFlaky": true,
+          "prMerged": true
+        },
+        {
+          "date": "2026-06-26",
+          "prNumber": "13243",
+          "prTitle": "Build the kata host binaries (and payload) statically for musl-only hosts",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "83757181433",
+          "runId": "28231773651",
+          "runAttempt": 3,
+          "isFlaky": false,
           "prMerged": false
         },
         {
@@ -1423,19 +1435,7 @@
           "jobId": "83757181433",
           "runId": "28231773651",
           "runAttempt": 3,
-          "isFlaky": true,
-          "prMerged": false
-        },
-        {
-          "date": "2026-06-26",
-          "prNumber": "13243",
-          "prTitle": "Build the kata host binaries (and payload) statically for musl-only hosts",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "jobId": "83757181433",
-          "runId": "28231773651",
-          "runAttempt": 3,
-          "isFlaky": true,
+          "isFlaky": false,
           "prMerged": false
         },
         {
@@ -1447,7 +1447,7 @@
           "jobId": "83757181443",
           "runId": "28231773651",
           "runAttempt": 3,
-          "isFlaky": true,
+          "isFlaky": false,
           "prMerged": false
         },
         {
@@ -1459,7 +1459,7 @@
           "jobId": "83757181443",
           "runId": "28231773651",
           "runAttempt": 3,
-          "isFlaky": true,
+          "isFlaky": false,
           "prMerged": false
         }
       ]
@@ -2853,9 +2853,9 @@
       "file": "k8s-qos-pods.bats",
       "totalFailures": 2,
       "flakyCount": 2,
-      "mergedCount": 0,
+      "mergedCount": 2,
       "isConfirmedFlaky": true,
-      "mergedDespiteFailure": false,
+      "mergedDespiteFailure": true,
       "uniquePRs": 1,
       "uniqueDates": [
         "2026-06-26"
@@ -2866,33 +2866,33 @@
           "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (dragonball, latest)",
           "count": 2,
           "flakyCount": 2,
-          "mergedCount": 0
+          "mergedCount": 2
         }
       ],
       "recentOccurrences": [
         {
           "date": "2026-06-26",
           "prNumber": "13249",
-          "prTitle": "Thiserror update",
+          "prTitle": "Thiserror and path-absolutize update",
           "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (dragonball, latest)",
           "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (dragonball, latest)",
           "jobId": "83654255705",
           "runId": "28235593644",
           "runAttempt": 1,
           "isFlaky": true,
-          "prMerged": false
+          "prMerged": true
         },
         {
           "date": "2026-06-26",
           "prNumber": "13249",
-          "prTitle": "Thiserror update",
+          "prTitle": "Thiserror and path-absolutize update",
           "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (dragonball, latest)",
           "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (dragonball, latest)",
           "jobId": "83654255705",
           "runId": "28235593644",
           "runAttempt": 1,
           "isFlaky": true,
-          "prMerged": false
+          "prMerged": true
         }
       ]
     },
@@ -2901,9 +2901,9 @@
       "file": "k8s-shared-volume.bats",
       "totalFailures": 2,
       "flakyCount": 2,
-      "mergedCount": 0,
+      "mergedCount": 2,
       "isConfirmedFlaky": true,
-      "mergedDespiteFailure": false,
+      "mergedDespiteFailure": true,
       "uniquePRs": 1,
       "uniqueDates": [
         "2026-06-26"
@@ -2914,33 +2914,33 @@
           "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-aks / run-k8s-tests (cbl-mariner, clh-azure, small, containerd)",
           "count": 2,
           "flakyCount": 2,
-          "mergedCount": 0
+          "mergedCount": 2
         }
       ],
       "recentOccurrences": [
         {
           "date": "2026-06-26",
           "prNumber": "13249",
-          "prTitle": "Thiserror update",
+          "prTitle": "Thiserror and path-absolutize update",
           "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-aks / run-k8s-tests (cbl-mariner, clh-azure, small, containerd)",
           "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-aks / run-k8s-tests (cbl-mariner, clh-azure, small, containerd)",
           "jobId": "83654255947",
           "runId": "28235593644",
           "runAttempt": 1,
           "isFlaky": true,
-          "prMerged": false
+          "prMerged": true
         },
         {
           "date": "2026-06-26",
           "prNumber": "13249",
-          "prTitle": "Thiserror update",
+          "prTitle": "Thiserror and path-absolutize update",
           "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-aks / run-k8s-tests (cbl-mariner, clh-azure, small, containerd)",
           "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-aks / run-k8s-tests (cbl-mariner, clh-azure, small, containerd)",
           "jobId": "83654255947",
           "runId": "28235593644",
           "runAttempt": 1,
           "isFlaky": true,
-          "prMerged": false
+          "prMerged": true
         }
       ]
     },
@@ -2995,14 +2995,14 @@
   ],
   "summary": {
     "totalFailedTests": 32,
-    "confirmedFlaky": 13,
-    "mergedDespiteFailure": 7,
+    "confirmedFlaky": 12,
+    "mergedDespiteFailure": 9,
     "mostAffectedJob": {
       "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
       "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-      "count": 66,
-      "flakyCount": 40,
-      "mergedCount": 10
+      "count": 56,
+      "flakyCount": 30,
+      "mergedCount": 20
     },
     "trend": [
       {
@@ -3043,7 +3043,7 @@
       },
       {
         "date": "2026-06-26",
-        "failures": 104
+        "failures": 92
       },
       {
         "date": "2026-06-27",
@@ -3059,23 +3059,23 @@
       },
       {
         "date": "2026-06-30",
-        "failures": 42
+        "failures": 54
       }
     ],
     "jobBreakdown": [
       {
         "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
         "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
-        "count": 66,
-        "flakyCount": 40,
-        "mergedCount": 10
+        "count": 56,
+        "flakyCount": 30,
+        "mergedCount": 20
       },
       {
         "name": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
         "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
         "count": 42,
-        "flakyCount": 2,
-        "mergedCount": 10
+        "flakyCount": 0,
+        "mergedCount": 14
       },
       {
         "name": "kata-containers-ci-on-push / run-kata-coco-tests-on-arm64 / run-k8s-tests-coco-arm64-k8s (qemu-coco-dev-runtime-rs, kubeadm)",
@@ -3087,8 +3087,8 @@
       {
         "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
         "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-        "count": 10,
-        "flakyCount": 10,
+        "count": 20,
+        "flakyCount": 0,
         "mergedCount": 0
       },
       {
@@ -3110,7 +3110,7 @@
         "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (dragonball, latest)",
         "count": 4,
         "flakyCount": 2,
-        "mergedCount": 0
+        "mergedCount": 2
       },
       {
         "name": "kata-containers-ci-on-push / run-k8s-tests-on-nvidia-gpu / run-nvidia-gpu-snp-runtime-rs-tests-on-amd64",
