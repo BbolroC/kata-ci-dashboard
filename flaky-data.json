@@ -1,7 +1,7 @@
 {
-  "lastRefresh": "2026-06-30T21:28:59.708Z",
+  "lastRefresh": "2026-07-01T02:36:53.158Z",
   "periodDays": 14,
-  "totalFailures": 144,
+  "totalFailures": 152,
   "totalPRs": 16,
   "confirmedFlakyCount": 6,
   "mergedDespiteFailureCount": 1,
@@ -9,23 +9,22 @@
     {
       "name": "Pod can be created with a templated VM",
       "file": "k8s-vm-templating.bats",
-      "totalFailures": 18,
+      "totalFailures": 16,
       "flakyCount": 0,
-      "mergedCount": 6,
+      "mergedCount": 4,
       "isConfirmedFlaky": false,
       "mergedDespiteFailure": true,
       "uniquePRs": 7,
       "uniqueDates": [
-        "2026-06-30",
-        "2026-06-29"
+        "2026-06-30"
       ],
       "affectedJobs": [
         {
           "name": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
           "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
-          "count": 18,
+          "count": 16,
           "flakyCount": 0,
-          "mergedCount": 6
+          "mergedCount": 4
         }
       ],
       "recentOccurrences": [
@@ -220,37 +219,13 @@
           "runAttempt": 1,
           "isFlaky": false,
           "prMerged": false
-        },
-        {
-          "date": "2026-06-29",
-          "prNumber": "13303",
-          "prTitle": "tests: test emptyDir sizeLimit eviction with virtio-fs",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
-          "jobId": "84164600253",
-          "runId": "28404297504",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": true
-        },
-        {
-          "date": "2026-06-29",
-          "prNumber": "13303",
-          "prTitle": "tests: test emptyDir sizeLimit eviction with virtio-fs",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
-          "jobId": "84164600253",
-          "runId": "28404297504",
-          "runAttempt": 1,
-          "isFlaky": false,
-          "prMerged": true
         }
       ]
     },
     {
       "name": "Empty dir volume when FSGroup is specified with non-root container",
       "file": "k8s-empty-dirs.bats",
-      "totalFailures": 14,
+      "totalFailures": 16,
       "flakyCount": 4,
       "mergedCount": 0,
       "isConfirmedFlaky": true,
@@ -270,7 +245,7 @@
         {
           "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
           "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "count": 4,
+          "count": 6,
           "flakyCount": 2,
           "mergedCount": 0
         },
@@ -326,6 +301,30 @@
           "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "jobId": "84394952503",
+          "runId": "28472735826",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-30",
+          "prNumber": "13309",
+          "prTitle": "runtime-rs: refactor block storage source mapping",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "84394952520",
+          "runId": "28472735826",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-30",
+          "prNumber": "13309",
+          "prTitle": "runtime-rs: refactor block storage source mapping",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "84394952520",
           "runId": "28472735826",
           "runAttempt": 1,
           "isFlaky": false,
@@ -456,7 +455,7 @@
     {
       "name": "Pod that performs ip6tables setup",
       "file": "k8s-ip6tables.bats",
-      "totalFailures": 12,
+      "totalFailures": 14,
       "flakyCount": 4,
       "mergedCount": 0,
       "isConfirmedFlaky": true,
@@ -476,7 +475,7 @@
         {
           "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
           "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "count": 4,
+          "count": 6,
           "flakyCount": 2,
           "mergedCount": 0
         }
@@ -501,6 +500,30 @@
           "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "jobId": "84394952503",
+          "runId": "28472735826",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-30",
+          "prNumber": "13309",
+          "prTitle": "runtime-rs: refactor block storage source mapping",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "84394952520",
+          "runId": "28472735826",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-30",
+          "prNumber": "13309",
+          "prTitle": "runtime-rs: refactor block storage source mapping",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "84394952520",
           "runId": "28472735826",
           "runAttempt": 1,
           "isFlaky": false,
@@ -631,7 +654,7 @@
     {
       "name": "Liveness http probe",
       "file": "k8s-liveness-probes.bats",
-      "totalFailures": 12,
+      "totalFailures": 14,
       "flakyCount": 4,
       "mergedCount": 0,
       "isConfirmedFlaky": true,
@@ -651,7 +674,7 @@
         {
           "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
           "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "count": 4,
+          "count": 6,
           "flakyCount": 2,
           "mergedCount": 0
         }
@@ -676,6 +699,30 @@
           "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "jobId": "84394952503",
+          "runId": "28472735826",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-30",
+          "prNumber": "13309",
+          "prTitle": "runtime-rs: refactor block storage source mapping",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "84394952520",
+          "runId": "28472735826",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-30",
+          "prNumber": "13309",
+          "prTitle": "runtime-rs: refactor block storage source mapping",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "84394952520",
           "runId": "28472735826",
           "runAttempt": 1,
           "isFlaky": false,
@@ -806,7 +853,7 @@
     {
       "name": "Liveness tcp probe",
       "file": "k8s-liveness-probes.bats",
-      "totalFailures": 12,
+      "totalFailures": 14,
       "flakyCount": 4,
       "mergedCount": 0,
       "isConfirmedFlaky": true,
@@ -826,7 +873,7 @@
         {
           "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
           "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "count": 4,
+          "count": 6,
           "flakyCount": 2,
           "mergedCount": 0
         }
@@ -851,6 +898,30 @@
           "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "jobId": "84394952503",
+          "runId": "28472735826",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-30",
+          "prNumber": "13309",
+          "prTitle": "runtime-rs: refactor block storage source mapping",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "84394952520",
+          "runId": "28472735826",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-30",
+          "prNumber": "13309",
+          "prTitle": "runtime-rs: refactor block storage source mapping",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "84394952520",
           "runId": "28472735826",
           "runAttempt": 1,
           "isFlaky": false,
@@ -981,7 +1052,7 @@
     {
       "name": "Pods establishing a VPN connection using openvpn",
       "file": "k8s-openvpn.bats",
-      "totalFailures": 12,
+      "totalFailures": 14,
       "flakyCount": 4,
       "mergedCount": 0,
       "isConfirmedFlaky": true,
@@ -1001,7 +1072,7 @@
         {
           "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
           "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-          "count": 4,
+          "count": 6,
           "flakyCount": 2,
           "mergedCount": 0
         }
@@ -1026,6 +1097,30 @@
           "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu, kubeadm)",
           "jobId": "84394952503",
+          "runId": "28472735826",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-30",
+          "prNumber": "13309",
+          "prTitle": "runtime-rs: refactor block storage source mapping",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "84394952520",
+          "runId": "28472735826",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-06-30",
+          "prNumber": "13309",
+          "prTitle": "runtime-rs: refactor block storage source mapping",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
+          "jobId": "84394952520",
           "runId": "28472735826",
           "runAttempt": 1,
           "isFlaky": false,
@@ -2703,10 +2798,6 @@
     },
     "trend": [
       {
-        "date": "2026-06-17",
-        "failures": 0
-      },
-      {
         "date": "2026-06-18",
         "failures": 0
       },
@@ -2752,11 +2843,15 @@
       },
       {
         "date": "2026-06-29",
-        "failures": 2
+        "failures": 0
       },
       {
         "date": "2026-06-30",
-        "failures": 142
+        "failures": 152
+      },
+      {
+        "date": "2026-07-01",
+        "failures": 0
       }
     ],
     "jobBreakdown": [
@@ -2777,16 +2872,16 @@
       {
         "name": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
         "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-arm64 / run-k8s-tests-on-arm64 (qemu-runtime-rs, kubeadm)",
-        "count": 20,
+        "count": 30,
         "flakyCount": 10,
         "mergedCount": 0
       },
       {
         "name": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
         "displayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
-        "count": 18,
+        "count": 16,
         "flakyCount": 0,
-        "mergedCount": 6
+        "mergedCount": 4
       },
       {
         "name": "kata-containers-ci-on-push / run-kata-coco-tests / run-k8s-tests-coco-nontee-with-erofs-snapshotter-disk-dmverity",
