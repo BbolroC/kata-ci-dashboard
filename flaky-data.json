@@ -1,5 +1,5 @@
 {
-  "lastRefresh": "2026-07-03T21:01:21.465Z",
+  "lastRefresh": "2026-07-04T02:02:34.516Z",
   "periodDays": 14,
   "totalFailures": 468,
   "totalPRs": 22,
@@ -7508,10 +7508,6 @@
     },
     "trend": [
       {
-        "date": "2026-06-20",
-        "failures": 0
-      },
-      {
         "date": "2026-06-21",
         "failures": 0
       },
@@ -7562,6 +7558,10 @@
       {
         "date": "2026-07-03",
         "failures": 438
+      },
+      {
+        "date": "2026-07-04",
+        "failures": 0
       }
     ],
     "jobBreakdown": [
