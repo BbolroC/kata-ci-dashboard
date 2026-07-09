@@ -1,5 +1,5 @@
 {
-  "lastRefresh": "2026-07-09T07:40:19.904Z",
+  "lastRefresh": "2026-07-09T10:55:47.847Z",
   "periodDays": 14,
   "totalFailures": 1196,
   "totalPRs": 17,
@@ -14,13 +14,12 @@
       "mergedCount": 8,
       "isConfirmedFlaky": false,
       "mergedDespiteFailure": true,
-      "uniquePRs": 10,
+      "uniquePRs": 11,
       "uniqueDates": [
         "2026-07-09",
         "2026-07-08",
         "2026-07-07",
-        "2026-07-06",
-        "2026-07-05"
+        "2026-07-06"
       ],
       "affectedJobs": [
         {
@@ -34,6 +33,30 @@
       "recentOccurrences": [
         {
           "date": "2026-07-09",
+          "prNumber": "13305",
+          "prTitle": "versions: rust 1.95 bump",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
+          "jobId": "86092600562",
+          "runId": "29008326361",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-07-09",
+          "prNumber": "13305",
+          "prTitle": "versions: rust 1.95 bump",
+          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
+          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
+          "jobId": "86092600562",
+          "runId": "29008326361",
+          "runAttempt": 1,
+          "isFlaky": false,
+          "prMerged": false
+        },
+        {
+          "date": "2026-07-09",
           "prNumber": "13275",
           "prTitle": "runtime-rs: substitute CLH config source placeholder",
           "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
@@ -367,30 +390,6 @@
           "runAttempt": 2,
           "isFlaky": false,
           "prMerged": true
-        },
-        {
-          "date": "2026-07-05",
-          "prNumber": "13277",
-          "prTitle": "runtime-rs: ch: charge guest memory to the pod cgroup",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
-          "jobId": "85404121562",
-          "runId": "28757196913",
-          "runAttempt": 2,
-          "isFlaky": false,
-          "prMerged": false
-        },
-        {
-          "date": "2026-07-05",
-          "prNumber": "13277",
-          "prTitle": "runtime-rs: ch: charge guest memory to the pod cgroup",
-          "jobName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
-          "jobDisplayName": "kata-containers-ci-on-push / run-k8s-tests-on-free-runner / run-k8s-tests (qemu, latest, erofs, disk, unmerged)",
-          "jobId": "85404121562",
-          "runId": "28757196913",
-          "runAttempt": 2,
-          "isFlaky": false,
-          "prMerged": false
         }
       ]
     },
@@ -17211,7 +17210,7 @@
       },
       {
         "date": "2026-07-05",
-        "failures": 2
+        "failures": 0
       },
       {
         "date": "2026-07-06",
@@ -17227,7 +17226,7 @@
       },
       {
         "date": "2026-07-09",
-        "failures": 125
+        "failures": 127
       }
     ],
     "jobBreakdown": [
