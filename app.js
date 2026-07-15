@@ -23,10 +23,13 @@ let state = {
   flakyJobFilter: 'all',
   // CoCo-specific state
   activeProject: 'kata', // 'kata' or 'coco'
-  activeCocoTab: 'coco-charts', // 'coco-charts', 'coco-caa', etc.
+  activeCocoTab: 'coco-charts', // 'coco-charts', 'coco-trustee', 'coco-caa', etc.
   cocoFilter: 'all',
   cocoSearchQuery: '',
   cocoSortBy: 'failures-desc',
+  trusteeFilter: 'all',
+  trusteeSearchQuery: '',
+  trusteeSortBy: 'failures-desc',
   caaFilter: 'all',
   caaSearchQuery: '',
   caaSortBy: 'failures-desc'
@@ -2148,6 +2151,30 @@ function init() {
     });
   }
   
+  // Filter buttons - Trustee
+  document.querySelectorAll('.filter-btn.trustee-filter').forEach(btn => {
+    btn.addEventListener('click', () => setTrusteeFilter(btn.dataset.filter));
+  });
+
+  // Search - Trustee
+  const trusteeSearchEl = document.getElementById('search-trustee-tests');
+  if (trusteeSearchEl) {
+    trusteeSearchEl.addEventListener('input', (e) => {
+      state.trusteeSearchQuery = e.target.value;
+      renderTrusteeSections();
+      updateTrusteeJobCount();
+    });
+  }
+
+  // Sort dropdown - Trustee
+  const trusteeSortSelect = document.getElementById('trustee-sort-select');
+  if (trusteeSortSelect) {
+    trusteeSortSelect.addEventListener('change', (e) => {
+      state.trusteeSortBy = e.target.value;
+      renderTrusteeSections();
+    });
+  }
+
   // Filter buttons - CAA
   document.querySelectorAll('.filter-btn.caa-filter').forEach(btn => {
     btn.addEventListener('click', () => setCAAFilter(btn.dataset.filter));
@@ -2235,6 +2262,10 @@ function switchCocoTab(tabName) {
     renderCocoSections();
     updateCocoStats();
     updateCocoJobCount();
+  } else if (tabName === 'coco-trustee') {
+    renderTrusteeSections();
+    updateTrusteeStats();
+    updateTrusteeJobCount();
   } else if (tabName === 'coco-caa') {
     renderCAASections();
     updateCAAStats();
@@ -2249,6 +2280,15 @@ function setCocoFilter(filter) {
   });
   renderCocoSections();
   updateCocoJobCount();
+}
+
+function setTrusteeFilter(filter) {
+  state.trusteeFilter = filter;
+  document.querySelectorAll('.filter-btn.trustee-filter').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.filter === filter);
+  });
+  renderTrusteeSections();
+  updateTrusteeJobCount();
 }
 
 function setCAAFilter(filter) {
@@ -2532,6 +2572,212 @@ function updateCocoJobCount() {
   const visibleEl = document.getElementById('coco-visible-jobs');
   const totalEl = document.getElementById('coco-total-jobs');
   
+  if (visibleEl) visibleEl.textContent = tests.length;
+  if (totalEl) totalEl.textContent = total;
+}
+
+// ============================================
+// Trustee Functions
+// ============================================
+
+function renderTrusteeSections() {
+  const container = document.getElementById('trustee-sections-container');
+  if (!container) return;
+
+  const trusteeSection = state.data?.cocoTrusteeSection;
+  if (!trusteeSection) {
+    container.innerHTML = '<p class="empty-message">No Trustee data available</p>';
+    return;
+  }
+
+  let tests = trusteeSection.tests || [];
+
+  if (state.trusteeSearchQuery) {
+    const query = state.trusteeSearchQuery.toLowerCase();
+    tests = tests.filter(t =>
+      t.name.toLowerCase().includes(query) ||
+      t.jobName?.toLowerCase().includes(query)
+    );
+  }
+
+  if (state.trusteeFilter && state.trusteeFilter !== 'all') {
+    tests = tests.filter(t => t.status === state.trusteeFilter);
+  }
+
+  tests = sortTests(tests, state.trusteeSortBy);
+
+  if (tests.length === 0) {
+    container.innerHTML = '<p class="empty-message">No tests match your filters</p>';
+    return;
+  }
+
+  const failed = tests.filter(t => t.status === 'failed');
+  const passed = tests.filter(t => t.status === 'passed');
+  const notRun = tests.filter(t => t.status === 'not_run' || t.status === 'none');
+
+  const weatherPercent = tests.length > 0
+    ? Math.round((passed.length / tests.length) * 100)
+    : 0;
+  const weatherEmoji = weatherPercent >= 90 ? '☀️' : weatherPercent >= 70 ? '⛅' : weatherPercent >= 50 ? '🌥️' : '🌧️';
+
+  const statusBadges = [];
+  if (failed.length > 0) {
+    statusBadges.push(`<span class="section-status has-failed">(${failed.length} failed)</span>`);
+  }
+  if (notRun.length > 0) {
+    statusBadges.push(`<span class="section-status has-not-run">(${notRun.length} not run)</span>`);
+  }
+  if (statusBadges.length === 0 && passed.length === tests.length) {
+    statusBadges.push(`<span class="section-status all-green">All Green</span>`);
+  }
+
+  const renderTrusteeTestGroup = (groupTests, label, statusClass, groupId, isExpanded) => {
+    if (groupTests.length === 0) return '';
+    return `
+      <div class="test-group ${isExpanded ? 'expanded' : ''}" data-group-id="${groupId}">
+        <div class="test-group-header" data-group="${groupId}">
+          <div class="test-group-title">
+            <span class="test-group-toggle">▶</span>
+            <span class="dot dot-${statusClass}"></span>
+            ${label} (${groupTests.length})
+          </div>
+        </div>
+        <div class="test-group-content">
+          <div class="test-table-header">
+            <span>Test Name</span>
+            <span>Maintainers</span>
+            <span>Run</span>
+            <span>Last Failure</span>
+            <span>Last Success</span>
+            <span class="weather-header">Weather <span class="weather-range">(oldest ← 10 days → newest)</span></span>
+            <span>Retried</span>
+          </div>
+          ${groupTests.map(t => renderCocoTestRow(t, trusteeSection.id, trusteeSection.sourceRepo)).join('')}
+        </div>
+      </div>
+    `;
+  };
+
+  if (!state.cocoTrusteeInitialized) {
+    state.expandedSections.add('coco-trustee');
+    if (failed.length > 0) {
+      state.expandedGroups.add('coco-trustee-failed');
+    }
+    state.cocoTrusteeInitialized = true;
+  }
+  const isSectionExpanded = state.expandedSections.has('coco-trustee');
+
+  container.innerHTML = `
+    <div class="section ${isSectionExpanded ? 'expanded' : ''}" data-section-id="coco-trustee">
+      <div class="section-header" data-section="coco-trustee">
+        <span class="section-toggle">▶</span>
+        <span class="section-name">All Jobs</span>
+        <div class="section-meta">
+          <span class="section-count">${tests.length} jobs</span>
+          <span class="section-weather">
+            <span class="section-weather-icon">${weatherEmoji}</span>
+            ${weatherPercent}%
+          </span>
+          ${statusBadges.join('')}
+        </div>
+      </div>
+      <div class="section-content" style="${isSectionExpanded ? '' : 'display: none;'}">
+        ${renderTrusteeTestGroup(failed, 'FAILED', 'failed', 'coco-trustee-failed', state.expandedGroups.has('coco-trustee-failed') || state.trusteeFilter === 'failed')}
+        ${renderTrusteeTestGroup(notRun, 'NOT RUN', 'not-run', 'coco-trustee-not-run', state.expandedGroups.has('coco-trustee-not-run') || state.trusteeFilter === 'not_run')}
+        ${renderTrusteeTestGroup(passed, 'PASSED', 'passed', 'coco-trustee-passed', state.expandedGroups.has('coco-trustee-passed') || state.trusteeFilter === 'passed')}
+      </div>
+    </div>
+  `;
+
+  const sectionHeader = container.querySelector('.section-header[data-section="coco-trustee"]');
+  if (sectionHeader) {
+    sectionHeader.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const sectionId = 'coco-trustee';
+      const section = sectionHeader.closest('.section');
+      const content = section.querySelector('.section-content');
+      const isExpanded = section.classList.contains('expanded');
+
+      if (isExpanded) {
+        state.expandedSections.delete(sectionId);
+      } else {
+        state.expandedSections.add(sectionId);
+      }
+
+      section.classList.toggle('expanded', !isExpanded);
+      content.style.display = isExpanded ? 'none' : '';
+    });
+  }
+
+  container.querySelectorAll('.test-group-header').forEach(header => {
+    header.addEventListener('click', (e) => {
+      if (e.target.closest('.btn')) return;
+      if (e.target.closest('.section-header')) return;
+      const groupId = header.dataset.group;
+      toggleGroup(groupId);
+    });
+  });
+
+  container.querySelectorAll('.test-weather-col[data-test-id]').forEach(col => {
+    col.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const testId = col.dataset.testId;
+      showWeatherModal('coco-trustee', testId);
+    });
+  });
+}
+
+function updateTrusteeStats() {
+  const trusteeSection = state.data?.cocoTrusteeSection;
+  if (!trusteeSection) return;
+
+  const tests = trusteeSection.tests || [];
+  const total = tests.length;
+  const failed = tests.filter(t => t.status === 'failed').length;
+  const notRun = tests.filter(t => t.status === 'not_run' || t.status === 'none').length;
+  const passed = tests.filter(t => t.status === 'passed').length;
+
+  const totalEl = document.getElementById('trustee-total-tests');
+  const failedEl = document.getElementById('trustee-failed-tests');
+  const notRunEl = document.getElementById('trustee-not-run-tests');
+  const passedEl = document.getElementById('trustee-passed-tests');
+
+  if (totalEl) totalEl.textContent = total;
+  if (failedEl) failedEl.textContent = failed;
+  if (notRunEl) notRunEl.textContent = notRun;
+  if (passedEl) passedEl.textContent = passed;
+
+  const filterFailedEl = document.getElementById('trustee-filter-failed-count');
+  const filterNotRunEl = document.getElementById('trustee-filter-not-run-count');
+  const filterPassedEl = document.getElementById('trustee-filter-passed-count');
+
+  if (filterFailedEl) filterFailedEl.textContent = failed;
+  if (filterNotRunEl) filterNotRunEl.textContent = notRun;
+  if (filterPassedEl) filterPassedEl.textContent = passed;
+}
+
+function updateTrusteeJobCount() {
+  const trusteeSection = state.data?.cocoTrusteeSection;
+  if (!trusteeSection) return;
+
+  let tests = trusteeSection.tests || [];
+  const total = tests.length;
+
+  if (state.trusteeSearchQuery) {
+    const query = state.trusteeSearchQuery.toLowerCase();
+    tests = tests.filter(t =>
+      t.name.toLowerCase().includes(query) ||
+      t.jobName?.toLowerCase().includes(query)
+    );
+  }
+
+  if (state.trusteeFilter && state.trusteeFilter !== 'all') {
+    tests = tests.filter(t => t.status === state.trusteeFilter);
+  }
+
+  const visibleEl = document.getElementById('trustee-visible-jobs');
+  const totalEl = document.getElementById('trustee-total-jobs');
+
   if (visibleEl) visibleEl.textContent = tests.length;
   if (totalEl) totalEl.textContent = total;
 }
