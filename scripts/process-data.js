@@ -1476,6 +1476,144 @@ try {
 }
 
 // ============================================
+// Process CoCo Trustee E2E Tests
+// ============================================
+
+let cocoTrusteeSection = null;
+try {
+  if (fs.existsSync('coco-trustee-jobs.json')) {
+    const trusteeJobs = JSON.parse(fs.readFileSync('coco-trustee-jobs.json', 'utf8'));
+    console.log(`Processing ${trusteeJobs.length} Trustee E2E jobs...`);
+
+    const nonE2EJobs = ['summary'];
+    const trusteeJobNames = [...new Set(trusteeJobs.map(j => j.name).filter(name => name))]
+      .filter(name => !nonE2EJobs.some(n => name.toLowerCase().includes(n.toLowerCase())))
+      .sort();
+    console.log(`  Found ${trusteeJobNames.length} unique Trustee E2E job names`);
+
+    cocoTrusteeSection = {
+      id: 'coco-trustee',
+      name: 'Trustee',
+      description: 'Trustee Helm E2E Tests (Nightly)',
+      subProject: 'Trustee',
+      sourceRepo: 'confidential-containers/trustee',
+      tests: trusteeJobNames.map(jobName => {
+        const testId = jobName.replace(/[^a-zA-Z0-9]/g, '-').toLowerCase();
+
+        const matchingJobs = trusteeJobs.filter(job => job.name === jobName)
+          .sort((a, b) => new Date(b.started_at || b.created_at) - new Date(a.started_at || a.created_at));
+
+        const latestJob = matchingJobs[0];
+        let status = 'not_run';
+
+        if (latestJob) {
+          if (latestJob.conclusion === 'success') {
+            status = 'passed';
+          } else if (latestJob.conclusion === 'failure') {
+            status = 'failed';
+          } else if (latestJob.status === 'in_progress' || latestJob.status === 'queued') {
+            status = 'running';
+          }
+        }
+
+        const weatherHistory = [];
+        const anchorDate = new Date();
+        for (let i = 0; i < 10; i++) {
+          const date = new Date(anchorDate);
+          date.setDate(date.getDate() - (9 - i));
+          date.setHours(0, 0, 0, 0);
+
+          const dayJobs = matchingJobs.filter(job => {
+            const jobDate = new Date(job.started_at || job.created_at);
+            return jobDate.toDateString() === date.toDateString();
+          });
+
+          const dayJob = dayJobs[0] || null;
+          let dayStatus = 'none';
+          let failureStep = null;
+
+          if (dayJob) {
+            if (dayJob.conclusion === 'success') {
+              dayStatus = 'passed';
+            } else if (dayJob.conclusion === 'failure') {
+              dayStatus = 'failed';
+              const failedStep = dayJob.steps?.find(s => s.conclusion === 'failure');
+              failureStep = failedStep?.name || 'Unknown step';
+            }
+          }
+
+          weatherHistory.push({
+            date: date.toISOString(),
+            status: dayStatus,
+            runId: dayJob?.workflow_run_id || dayJob?.run_id?.toString() || null,
+            jobId: dayJob?.id?.toString() || null,
+            duration: dayJob ? formatDuration(dayJob.started_at, dayJob.completed_at) : null,
+            failureStep: failureStep
+          });
+        }
+
+        const lastFailureJob = matchingJobs.find(j => j.conclusion === 'failure');
+        const lastSuccessJob = matchingJobs.find(j => j.conclusion === 'success');
+
+        let errorDetails = null;
+        if (status === 'failed' && latestJob?.id) {
+          const failedStep = latestJob.steps?.find(s => s.conclusion === 'failure');
+          const testFailures = parseTestFailures(latestJob.id.toString());
+
+          if (testFailures && testFailures.failures.length > 0) {
+            errorDetails = {
+              step: failedStep?.name || 'Unknown step',
+              testResults: testFailures.stats,
+              failures: testFailures.failures.slice(0, 20),
+              output: testFailures.failures.map(f => {
+                const isGoTest = /^Test[A-Z]/.test(f.name) || f.name.includes('/');
+                if (isGoTest) {
+                  return `--- FAIL: ${f.name}`;
+                }
+                return `not ok ${f.number} - ${f.name}${f.comment ? ' # ' + f.comment : ''}`;
+              }).join('\n')
+            };
+          } else {
+            errorDetails = {
+              step: failedStep?.name || 'Unknown step',
+              output: 'View full log on GitHub for details'
+            };
+          }
+        }
+
+        return {
+          id: testId,
+          name: jobName,
+          jobName: jobName,
+          fullName: jobName,
+          status: status,
+          duration: latestJob ? formatDuration(latestJob.started_at, latestJob.completed_at) : 'N/A',
+          lastFailure: lastFailureJob ? formatRelativeTime(lastFailureJob.started_at) : 'Never',
+          lastSuccess: lastSuccessJob ? formatRelativeTime(lastSuccessJob.started_at) : 'Never',
+          weatherHistory: weatherHistory,
+          failureCount: weatherHistory.filter(w => w.status === 'failed').length,
+          retried: latestJob?.run_attempt > 1 ? latestJob.run_attempt - 1 : 0,
+          runId: latestJob?.workflow_run_id || latestJob?.run_id?.toString() || null,
+          jobId: latestJob?.id?.toString() || null,
+          sourceRepo: 'confidential-containers/trustee',
+          maintainers: [],
+          error: errorDetails
+        };
+      })
+    };
+
+    console.log(`Trustee section: ${cocoTrusteeSection.tests.length} jobs`);
+    const trusteePassed = cocoTrusteeSection.tests.filter(t => t.status === 'passed').length;
+    const trusteeFailed = cocoTrusteeSection.tests.filter(t => t.status === 'failed').length;
+    console.log(`  ${trusteePassed} passed, ${trusteeFailed} failed`);
+  } else {
+    console.log('No coco-trustee-jobs.json found, skipping Trustee section');
+  }
+} catch (e) {
+  console.warn('Failed to process Trustee data:', e.message);
+}
+
+// ============================================
 // Process CoCo Cloud API Adaptor E2E Tests
 // ============================================
 
@@ -1627,6 +1765,7 @@ const outputData = {
   sections: sections,
   allJobsSection: allJobsSection, // NEW: all jobs for the "All" view
   cocoChartsSection: cocoChartsSection, // CoCo Charts E2E tests
+  cocoTrusteeSection: cocoTrusteeSection, // CoCo Trustee E2E tests
   cocoCAASection: cocoCAASection, // CoCo Cloud API Adaptor E2E tests
   requiredTests: requiredTests,
   jobCategories: categoryPatterns,

@@ -203,6 +203,10 @@
           <span class="tab-icon">⎈</span>
           Charts
         </button>
+        <button class="tab" data-tab="coco-trustee">
+          <span class="tab-icon">🔐</span>
+          Trustee
+        </button>
         <button class="tab" data-tab="coco-caa">
           <span class="tab-icon">☁️</span>
           Cloud API Adaptor
@@ -348,6 +352,77 @@
         <!-- Sections -->
         <div class="sections" id="caa-sections-container">
           <!-- CAA sections will be rendered by JavaScript -->
+        </div>
+      </main>
+
+      <!-- CoCo Trustee Content -->
+      <main class="content tab-content" id="coco-trustee-content">
+        <!-- Quick Stats -->
+        <div class="quick-stats">
+          <div class="stat">
+            <span class="stat-value" id="trustee-total-tests">0</span>
+            <span class="stat-label">Total Tests</span>
+          </div>
+          <div class="stat stat-failed">
+            <span class="stat-value" id="trustee-failed-tests">0</span>
+            <span class="stat-label">Failed</span>
+          </div>
+          <div class="stat stat-not-run">
+            <span class="stat-value" id="trustee-not-run-tests">0</span>
+            <span class="stat-label">Not Run</span>
+          </div>
+          <div class="stat stat-passed">
+            <span class="stat-value" id="trustee-passed-tests">0</span>
+            <span class="stat-label">Passed</span>
+          </div>
+        </div>
+
+        <!-- Filters -->
+        <div class="filters">
+          <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="search-trustee-tests" placeholder="Search E2E tests...">
+          </div>
+          <div class="filter-buttons">
+            <button class="filter-btn trustee-filter active" data-filter="all">All</button>
+            <button class="filter-btn trustee-filter" data-filter="failed">
+              <span class="dot dot-failed"></span> Failed (<span id="trustee-filter-failed-count">0</span>)
+            </button>
+            <button class="filter-btn trustee-filter" data-filter="not_run">
+              <span class="dot dot-not-run"></span> Not Run (<span id="trustee-filter-not-run-count">0</span>)
+            </button>
+            <button class="filter-btn trustee-filter" data-filter="passed">
+              <span class="dot dot-passed"></span> Passed (<span id="trustee-filter-passed-count">0</span>)
+            </button>
+          </div>
+          <div class="sort-control">
+            <label for="trustee-sort-select">Sort:</label>
+            <select id="trustee-sort-select" class="sort-select">
+              <option value="failures-desc" selected>Most Failures</option>
+              <option value="name">Name (A-Z)</option>
+              <option value="pass-rate-asc">Lowest Pass Rate</option>
+              <option value="last-failure">Recent Failure</option>
+              <option value="status">Status</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Job Count -->
+        <div class="job-count-display">
+          <span>Showing <strong id="trustee-visible-jobs">0</strong> of <strong id="trustee-total-jobs">0</strong> E2E tests</span>
+        </div>
+
+        <!-- Date Display -->
+        <div class="date-header">
+          <h2>Nightly Helm E2E Runs — <span id="trustee-current-date">November 28, 2025</span></h2>
+          <p class="section-subtitle">
+            <a href="https://github.com/confidential-containers/trustee" target="_blank">confidential-containers/trustee</a>
+          </p>
+        </div>
+
+        <!-- Sections -->
+        <div class="sections" id="trustee-sections-container">
+          <!-- Trustee sections will be rendered by JavaScript -->
         </div>
       </main>
     </div><!-- End CoCo Content -->

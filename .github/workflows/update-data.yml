@@ -314,6 +314,69 @@ jobs:
           
           echo "CAA log files fetched: $(ls coco-caa-logs/ 2>/dev/null | wc -l)"
       
+      - name: Fetch CoCo Trustee E2E test data
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Fetching Trustee Helm nightly E2E workflow runs (scheduled only)..."
+
+          # Fetch recent scheduled workflow runs from confidential-containers/trustee
+          gh api \
+            -H "Accept: application/vnd.github+json" \
+            --paginate \
+            "repos/confidential-containers/trustee/actions/workflows/test-e2e-helm-nightly.yml/runs?event=schedule&created=>$(date -d '10 days ago' +%Y-%m-%d)" \
+            --jq '.workflow_runs' | jq -s 'add // []' > coco-trustee-runs.json
+
+          echo "Found $(jq 'length' coco-trustee-runs.json) Trustee scheduled runs"
+
+          # Fetch jobs for each run
+          echo '[]' > coco-trustee-jobs.json
+
+          for run_id in $(jq -r '.[0:15] | .[].id' coco-trustee-runs.json); do
+            echo "Fetching jobs for Trustee run $run_id..."
+
+            # Use filter=all to get jobs from ALL attempts
+            gh api \
+              -H "Accept: application/vnd.github+json" \
+              --paginate \
+              "repos/confidential-containers/trustee/actions/runs/$run_id/jobs?per_page=100&filter=all" \
+              --jq '.jobs[]' | \
+              jq -s --arg run_id "$run_id" '[.[] | . + {workflow_run_id: $run_id, source_repo: "confidential-containers/trustee"}]' > run-jobs.json
+
+            echo "  Found $(jq 'length' run-jobs.json) jobs"
+
+            jq -s 'add' coco-trustee-jobs.json run-jobs.json > temp-jobs.json
+            mv temp-jobs.json coco-trustee-jobs.json
+          done
+
+          echo "Fetched $(jq 'length' coco-trustee-jobs.json) Trustee jobs total"
+
+          # Fetch logs for failed Trustee jobs
+          echo ""
+          echo "Fetching logs for failed Trustee jobs..."
+          mkdir -p coco-trustee-logs
+
+          for job_id in $(jq -r '.[] | select(.conclusion == "failure") | .id' coco-trustee-jobs.json); do
+            echo "Fetching logs for Trustee job $job_id..."
+
+            curl -sL \
+              -H "Authorization: token $GH_TOKEN" \
+              -H "Accept: application/vnd.github+json" \
+              "https://api.github.com/repos/confidential-containers/trustee/actions/jobs/$job_id/logs" \
+              -o "coco-trustee-logs/$job_id.log" 2>&1
+
+            if [ -f "coco-trustee-logs/$job_id.log" ]; then
+              size=$(wc -c < "coco-trustee-logs/$job_id.log")
+              echo "  Log file size: $size bytes"
+
+              # Check for Go test FAIL patterns
+              fail_count=$(grep -c "FAIL:" "coco-trustee-logs/$job_id.log" 2>/dev/null || echo "0")
+              echo "  Found $fail_count 'FAIL:' lines (Go test failures)"
+            fi
+          done
+
+          echo "Trustee log files fetched: $(ls coco-trustee-logs/ 2>/dev/null | wc -l)"
+
       - name: Process data
         id: process
         env:
